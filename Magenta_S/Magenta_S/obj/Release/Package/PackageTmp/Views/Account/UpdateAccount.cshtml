@@ -1,0 +1,154 @@
+﻿@model Magenta_S.Models.UpdateAccount
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="~/Content/SettingAccount/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/SettingAccount/all.css" rel="stylesheet" />
+    <link href="~/Content/SettingAccount/style.css" rel="stylesheet" />
+    <link href="~/Content/Home/fontawesome/js/all.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="bg-white shadow rounded-lg d-block d-sm-flex">
+            <div class="profile-tab-nav border-right">
+                <div class="p-4">
+
+                    <h4 class="text-center">Magenta Store</h4>
+                </div>
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active ac" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">
+                        <i class="fa fa-home text-center mr-1"></i>
+                        Account
+                    </a>
+                    <a class="nav-link" id="password-tab pa" data-toggle="pill" href="#password" role="tab" aria-controls="password" aria-selected="false">
+                        <i class="fa fa-key text-center mr-1"></i>
+                        Password
+                    </a>
+
+                </div>
+            </div>
+            @using (@Html.BeginForm("UpdateAccount", "Account", FormMethod.Post, new { @class = "sign-in-form" }))
+            {
+                @Html.ValidationSummary(true)
+                @Html.HiddenFor(m => m.Idu)
+                @Html.HiddenFor(m => m.Idc)             
+                @Html.HiddenFor(x=>x.CommercialRecord)
+            <div class="tab-content p-4 p-md-5" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+                    <h3 class="mb-4">Account Settings</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                @Html.TextBoxFor(m => m.Fname, new { placeholder = "Fname", required = "required", @class = "form-control" })
+                         
+                                @Html.ValidationMessageFor(m => m.Fname, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                @Html.TextBoxFor(m => m.Lname, new { placeholder = "Lname", required = "required", @class = "form-control" })
+                   
+                                @Html.ValidationMessageFor(m => m.Lname, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>User Name</label>
+                                @Html.TextBoxFor(m => m.Username, new { placeholder = "Username", required = "required", @class = "form-control", Readonly = "readonly" })
+                 
+                                @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Phone number</label>
+                                @Html.TextBoxFor(m => m.Phone, new { placeholder = "Phone", required = "required", @class = "form-control" })
+                           
+                                @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Address</label>
+                                @Html.TextBoxFor(m => m.address, new { placeholder = "address", required = "required", @class = "form-control" })
+                               
+                                @Html.ValidationMessageFor(m => m.address, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Birth Day</label>
+                                @Html.TextBoxFor(m => m.Hiredate, "{0:yyyy-MM-dd}", new { placeholder = "Hiredate", required = "required", @class = "form-control", @type = "date" })
+                         
+                                @Html.ValidationMessageFor(m => m.Hiredate, "", new { @class = "text-danger" })
+                                <br>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                    <h3 class="mb-4">Password Settings</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Old password</label>
+                                @Html.TextBoxFor(m => m.oldPassword, new { placeholder = "Old Password", @class = "form-control" })
+                          
+                                @Html.ValidationMessageFor(m => m.oldPassword, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>New password</label>
+                                @Html.TextBoxFor(m => m.Password, new { placeholder = "Password", @class = "form-control", Value = "" })
+
+                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Confirm new password</label>
+                                @Html.TextBoxFor(m => m.ConfirmPassword, new {  placeholder = "ConfirmPassword", @class = "form-control" })
+
+                                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary">Update</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </div>
+                </div>
+
+
+            </div>
+            }
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/SettingAccount/jquery-3.2.1.slim.min.js"></script>
+    <script src="~/Scripts/SettingAccount/popper.min.js"></script>
+    <script src="~/Scripts/SettingAccount/bootstrap.min.js"></script>
+</body>
+</html>

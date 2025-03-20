@@ -1,0 +1,168 @@
+﻿@model Magenta_S.Models.my_buy
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="~/Content/Home/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Dealers_Reviews/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/My_Buy/theme.مشترياتي.css" rel="stylesheet" />
+    <link href="~/Content/My_Buy/style.مشترياتي.css" rel="stylesheet" />
+    <style>
+        .fff {
+            text-align:center;
+            color:#00bba7;
+            font-size:60px;
+           
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            @{ string home = "";
+                if (Model.idseesion == 1)
+                {
+                    home = "HomeAdmin";
+                }
+                else if (Model.idseesion == 2)
+                {
+                    home = "HomeCustomer";
+                }
+                else if (Model.idseesion == 3) {
+                    home = "HomeDealer";
+                }
+            }
+            <a class="navbar ma" href='@Url.Action(home, "Home")'>MAGENTA</a>
+            @if (Model.idseesion == 1)
+            {
+
+                <a href='@Url.Action("Requist", "Requist")' title="Requists" class="icon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                    </svg>
+                </a>
+
+            }
+             
+            <div class="collapse navbar-collapse">
+
+
+
+                <form class="d-flex ">
+                    <button class="btn btn-outline-success bu" type="submit">SEARCH</button>
+                    <input class="form-control me-2 in-1" type="search" placeholder="" aria-label="Search">
+
+                </form>
+           
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                @{  bool s = false;}
+
+
+                @{
+//List<Magenta_S.Models.Bill> bill;
+//if (Model.idseesion == 1)
+//{
+//    bill = Model.getbillforadmin;
+//}
+
+//else {
+//    Magenta_S.Models.magentadb mg = new Magenta_S.Models.magentadb();
+
+
+//    bill = mg.Bills.Where(x => x.Idu == Model.idu).ToList();
+
+//}
+
+
+                 }
+              
+                  @foreach (var item in Model.GetBills)
+                  {
+                      s = true;
+                      Model.idbill = @item.Idbill;
+                <div class=" table-responsive table-responsive-data2 bill">
+                   
+
+                    <h2>Number Bill</h2> <label class="idb">@item.Idbill</label>
+                    <table>
+                        <thead>
+                          
+
+                            <tr>
+                                <th>Name Product</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Count</th>
+                                <th> Price</th>
+                                <th>Total Price</th>
+                                <th style="color:#00acee; font-weight:bold;">New address</th>
+                                <th style="color:#00acee; font-weight:bold;"> Phone</th>
+                                <th style="color:red;"> Total of Bill </th>
+                            </tr>
+                        </thead>
+                            @foreach (var i in item.Buys)
+                            {
+                        <tr class="tr-shadow">
+                            <td>@i.Product.Type</td>
+                            <td>@item.date.ToShortDateString()</td>
+                            <td>
+                                <span class="status--sale">Sale</span>
+                            </td>
+                            <td>@i.Count</td>
+                            @{ double d = i.Product.Price * 1.05;  }
+                            <td> @d </td>
+                            
+                            @{double k = d * i.Count; }
+                            <td><span class="status--sale">@k </span></td>
+                            <td style="color:#00acee; font-weight:bold;">  @i.Bill1.Newplace </td>
+                            <td style="color:#00acee; font-weight:bold;"> @i.Bill1.Newphone </td>
+                            <td style="color:red; font-weight:bold;"> @i.Bill1.Totalprice </td>
+                    
+                        </tr>
+                        
+                                }
+                        
+                    </table>
+                   
+                </div>
+                    }
+                @if (s == false)
+                {
+                    <section class="content-block" style="background-color:#00bba7;height:90px;" >
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.1s">
+                                        <h1 class="callactiontitle">
+                                            There is NO bill Here
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                }
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/Home/jquery-.js"></script>
+    <script src="~/Scripts/Home/bootstrap.min.js"></script>
+    <script src="~/Scripts/Home/anim.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+﻿@model Magenta_S.Models.RegisterUser
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="~/Content/RegisterUser/style.أنشاء حساب.css" rel="stylesheet" />
+
+    <style> 
+        
+         .eye{
+  position: relative;
+  bottom:73px;
+  left: 255px;
+}
+
+        .alaa {
+           position:relative;
+           bottom:20px;
+           right:260px;
+           color:red
+        }
+
+        .alaap {
+            position:relative;
+           bottom:10px;
+           right:260px;
+           color:red
+        }
+    
+     </style>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <div class="container">
+      
+        <div class="forms-container">
+            <div class="signin-signup">
+            @using (@Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "sign-in-form" }))
+            {
+              
+                <!--form تسجيل الدخول-->
+                    <h2 class="title">Sign In</h2>
+                    <div class="input-field">
+                        <!--========= اضافة svg بدل الأيقونات--=========-->
+                       
+
+
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                            </svg>
+                        </i>
+                        @Html.TextBoxFor(m => m.Username, new { placeholder = "Email", required = "required" })
+                        <br> <br>
+                        @Html.ValidationMessageFor(m => m.Username, "", new { @class = "alaa" })
+                    </div>
+                    <div class="input-field">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" />
+                            </svg>
+                        </i>
+                        @Html.TextBoxFor(m => m.Password, new { type = "Password", placeholder = "Password", id = "pass-id", required = "required" })
+                        <br> <br>
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "alaap" })                    
+                        <!--لاظهار كلمة السر-->
+                        <div class="eye" onclick="myFunction()">
+                            <svg id="hide01" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512">
+                                <path d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z" />
+                            </svg>
+                            <svg class="hide" id="hide02" xmlns="http://www.w3.o rg/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                                <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z" />
+                            </svg>
+                        </div>
+                        <!--End-->
+                    </div>
+                    <!--===========End===========-->
+                    <input type="submit" value="login" class="bth solid">
+            }
+                <!--form انشاء حساب-->
+                 @using (@Html.BeginForm("RegisterUser", "Account", FormMethod.Post, new { @class = "sign-up-form" }))
+                 {
+                     @Html.ValidationSummary(true)
+                    <h2 class="title">Create an account</h2>
+                    <div class="Division">
+                        <div class="n1">
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Fname, new { placeholder = "firstname", required = "required" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Fname, "", new { @class = "text-danger" })
+                       
+                            </div>
+                            <div class="input-field" onkeyup="con()">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Password, new { type= "Password",placeholder = "Password", id = "pass-id1", required = "required" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Password, "")                    
+                                <!--لاظهار كلمة السر-->
+                                <div class="eye in" onclick="myFunction1()">
+                                    <svg id="hide12" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512">
+                                        <path d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z" />
+                                    </svg>
+                                    <svg class="hide" id="hide13" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                                        <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                                        <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Username, new { placeholder = "Email", required = "required" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                         
+                            </div>
+                        <div class="input-field">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                                    <path d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z" />
+                                </svg>
+                            </i>
+                            @Html.TextBoxFor(m => m.address, new { placeholder = "addres", required = "required" })
+                            <br> <br>
+                            @Html.ValidationMessageFor(m => m.address, "", new { @class = "text-danger" })
+                    
+                            </div>
+                        </div>
+                        <div class="n2">
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Lname, new { placeholder = "lastname", required = "required" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Lname, "", new { @class = "text-danger" })
+                            
+                            </div>
+                            <div class="input-field" id="con" onkeyup="con()">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.ConfirmPassword, new { type = "Password", placeholder = "Confirmation password", id = "pass-id2", required = "required" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                            
+                                <!--لاظهار كلمة السر-->
+                                <div class="eye in" onclick="myFunction2()">
+                                    <svg id="hide23" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512">
+                                        <path d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z" />
+                                    </svg>
+                                    <svg class="hide" id="hide24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                                        <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z" />
+                                    </svg>
+                                </div>
+                            </div>
+                    <div class="input-field">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z" />
+                            </svg>
+                        </i>
+                        @Html.TextBoxFor(m => m.Phone, new { placeholder = "Phone", required = "required", type = "number" })
+                        <br><br> <br>
+                        @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+                    
+                                <br><br> <br>
+                            </div>
+                    <div class="input-field">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 288 512">
+                                <path d="M144 176c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80m0-64C64.5 112 0 176.5 0 256s64.5 144 144 144 144-64.5 144-144-64.5-144-144-144z" />
+                            </svg>
+                        </i>
+                        @Html.DropDownListFor(m => m.Gender, new List<SelectListItem>{
+                                new SelectListItem {Text="Male" ,Value="Male" },
+                                 new SelectListItem {Text="Famale" ,Value="Famale" }
+
+
+                                }, "Select Gender", new { required = "required", @class = "Gn" })
+                        <br> <br>
+                        @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
+                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-field">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                <path d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h96c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-96zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
+                            </svg>
+                        </i>
+                        @Html.TextBoxFor(m => m.birthday, new { placeholder = "birthday", required = "required", type = "date" ,min="1930-01-01" ,max="2006-01-01"})
+                        <br> <br>
+                        @Html.ValidationMessageFor(m => m.birthday, "", new { @class = "text-danger" })
+                    </div>
+                   
+                    <input type="submit" value="sign up" class="bth solid" style="margin-top:50px;" >
+                 
+                 }
+                <!--form انشاء حساب تاجر-->
+            @using (@Html.BeginForm("RegisterDealer", "Account", FormMethod.Post, new { @class = "sign-ups-form" }))
+            { 
+                    <h2 class="title">Create a Dealer</h2>
+                    <div class="Division">
+                        <div class="n1">
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Fname, new { placeholder = "firstname", required = "required",id = "Dealer1" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Fname, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-field" onkeyup="con1()">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Password, new { type = "Password", placeholder = "Password", id = "pass-id3", required = "required" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Password, "")                               
+                                <!--لاظهار كلمة السر-->
+                                <div class="eye in" onclick="myFunction3()">
+                                    <svg id="hide34" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512">
+                                        <path d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z" />
+                                    </svg>
+                                    <svg class="hide" id="hide35" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                                        <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                                        <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Username, new { placeholder = "Email", required = "required", id = "Dealer2" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.CommercialRecord, new { placeholder = "NumberRegisterNerchant", required = "required", id = "Dealer3" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.CommercialRecord, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                                        <path d="M528 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-352 96c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64zm112 236.8c0 10.6-10 19.2-22.4 19.2H86.4C74 384 64 375.4 64 364.8v-19.2c0-31.8 30.1-57.6 67.2-57.6h5c12.3 5.1 25.7 8 39.8 8s27.6-2.9 39.8-8h5c37.1 0 67.2 25.8 67.2 57.6v19.2zM512 312c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-64c0 4.4-3.6 8-8 8H360c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.address, new { placeholder = "addres", required = "required", id = "Dealer4" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.address, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="n2">
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Lname, new { placeholder = "lastname", required = "required", id = "Dealer5" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Lname, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-field" id="con1" onkeyup="con1()">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.ConfirmPassword, new { type = "Password", placeholder = "Confirmation password", id = "pass-id4", required = "required" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                                <!--لاظهار كلمة السر-->
+                                <div class="eye in" onclick="myFunction4()">
+                                    <svg id="hide45" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512">
+                                        <path d="M320 400c-75.85 0-137.25-58.71-142.9-133.11L72.2 185.82c-13.79 17.3-26.48 35.59-36.72 55.59a32.35 32.35 0 0 0 0 29.19C89.71 376.41 197.07 448 320 448c26.91 0 52.87-4 77.89-10.46L346 397.39a144.13 144.13 0 0 1-26 2.61zm313.82 58.1l-110.55-85.44a331.25 331.25 0 0 0 81.25-102.07 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64a308.15 308.15 0 0 0-147.32 37.7L45.46 3.37A16 16 0 0 0 23 6.18L3.37 31.45A16 16 0 0 0 6.18 53.9l588.36 454.73a16 16 0 0 0 22.46-2.81l19.64-25.27a16 16 0 0 0-2.82-22.45zm-183.72-142l-39.3-30.38A94.75 94.75 0 0 0 416 256a94.76 94.76 0 0 0-121.31-92.21A47.65 47.65 0 0 1 304 192a46.64 46.64 0 0 1-1.54 10l-73.61-56.89A142.31 142.31 0 0 1 320 112a143.92 143.92 0 0 1 144 144c0 21.63-5.29 41.79-13.9 60.11z" />
+                                    </svg>
+                                    <svg class="hide" id="hide46" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
+                                        <path d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.Phone, new { placeholder = "Phone", required = "required", type = "number", id = "Dealer6" })
+                                <br><br> <br>
+                                @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h96c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-96zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
+                                    </svg>
+                                </i>
+                                @Html.TextBoxFor(m => m.birthday, new { placeholder = "birthday", required = "required",  type = "date", id = "Dealer7" , min = "1930-01-01", max = "2006-01-01" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.birthday, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-field">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 288 512">
+                                        <path d="M144 176c44.1 0 80 35.9 80 80s-35.9 80-80 80-80-35.9-80-80 35.9-80 80-80m0-64C64.5 112 0 176.5 0 256s64.5 144 144 144 144-64.5 144-144-64.5-144-144-144z" />
+                                    </svg>
+                                </i>
+                                @Html.DropDownListFor(m => m.Gender, new List<SelectListItem>{
+                                new SelectListItem {Text="Male" ,Value="Male" },
+                                 new SelectListItem {Text="Famale" ,Value="Famale" }
+
+
+                                }, "Select Gender", new { required = "required", @class = "Gn",id= "Dealer8" })
+                                <br> <br>
+                                @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Create Account" class="bth solid">
+                }
+            </div>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <button class="bth transparent" id="sign-up-bth">Create an Account</button>
+                    <button class="bth transparent" id="sign-ups-bth">Create a Dealer</button>
+                </div>
+                <img src="~/Image/undraw_Mobile_apps_re_3wjf.svg"   class="image" alt=""/>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <button class="bth transparent" id="sign-in-bth">Sign in</button>
+                </div>
+                <img src="~/Image/undraw_Filing_system_re_56h6.svg" class="image" alt="" />
+            </div>
+            <div class="panel button-panel">
+                <div class="content">
+                    <button class="bth transparent" id="sign-ins-bth">Sign in</button>
+                </div>
+                <img src="~/Image/undraw_Resume_folder_re_e0bi.svg"  class="image" alt="" />
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/RegisterUser/app.أنشاء حساب.js"></script>
+
+</body>
+</html>

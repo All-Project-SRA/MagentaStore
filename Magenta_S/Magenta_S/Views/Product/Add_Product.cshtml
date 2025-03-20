@@ -1,0 +1,372 @@
+﻿@model Magenta_S.Models.ProductA
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="~/Content/Add_Product/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Add_Product/style.css" rel="stylesheet" />
+    <style>
+        .check {
+
+            text-align:center;
+            font-size:90px;
+            color:red;
+        }
+        .vv {
+            color:red;
+            font-size:30px;
+            font-weight:bolder;
+            Font-style : italic;
+            margin-top:60px;
+                
+        }
+        </style>
+
+
+</head>
+
+<body>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+           @using (@Html.BeginForm("Add_Product", "Product", FormMethod.Post, new { @class = "sign-in-form" ,enctype="multipart/form-data"}))
+           {
+
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-4 register-left">
+                    <img src="img/i1.jpg" id="img" alt="" height="500" width="250">
+                    
+                    <input type="file" class="form-control test2" name="Upload" id="imag" onchange="getImage(event)" required>
+                  
+
+
+                </div>
+                <div class="col-md-8 register-right">
+                  
+
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Product Information                           
+                            </h3>
+                            <label> @Html.ValidationMessage("checks", new { @class = "register-heading vv" }) </label>
+                            <label>  @Html.ValidationMessage("checkc", new { @class = "register-heading vv" })</label>
+                            <label>  @Html.ValidationMessage("imageu", new { @class = "register-heading vv" })</label>
+
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                
+                                    <div class="form-floating">
+                                     
+
+                                      @Html.DropDownListFor(m =>m.Type, new List<SelectListItem>{
+                                              new SelectListItem {Text="Tshirt" ,Value="Tshirt" },
+                                               new SelectListItem {Text="Address" ,Value="Address" },
+                                               new SelectListItem {Text="Shoes" ,Value="Shoes" },
+                                               new SelectListItem {Text="Shirt" ,Value="Shirt" },
+                                               new SelectListItem {Text="Trousers" ,Value="Trousers" },
+                                               new SelectListItem {Text="Jeans" ,Value="Jeans" }
+                                                  }, " ", new { required = "required", @class = "form-control", id = "floatingType"  })
+                                        @Html.ValidationMessageFor(m => m.Type, "", new { @class = "alaa" })
+
+                                        
+                                        
+
+                                        <label for="floatingType">Type Of Product :</label>
+                                    </div>
+                                    <div class="form-floating">
+
+                                        @Html.DropDownListFor(m => m.Genderoftype, new List<SelectListItem>{
+                                new SelectListItem {Text="Male" ,Value="Male" },
+                                 new SelectListItem {Text="Famale" ,Value="Famale" }
+                                }, " ", new { required = "required", @class = "form-control",id= "floatingGender" })
+                                        @Html.ValidationMessageFor(m => m.Genderoftype, "", new { @class = "alaa" })
+
+                                        <label for="floatingGender">Gender Of Type :</label>
+                                    </div>
+                                    <div class="form-floating">
+
+                                        @Html.DropDownListFor(m => m.Quality, new List<SelectListItem>{
+                                              new SelectListItem {Text="Cotton" ,Value="Cotton" },
+                                               new SelectListItem {Text="Wool" ,Value="Wool" },
+                                               new SelectListItem {Text="WaterProof" ,Value="WaterProof" },
+                                               
+                                                  }, " ", new { required = "required", @class = "form-control", id = "floatingQuality" })
+                                        @Html.ValidationMessageFor(m => m.Quality, "", new { @class = "alaa" })
+
+                                        <label for="floatingQuality">Quality Of Product :</label>
+                                    </div>
+                                    
+                                    <div class="form-floating">
+                                        @Html.DropDownListFor(m => m.Season, new List<SelectListItem>{
+                                              new SelectListItem {Text="Summer" ,Value="Summer" },
+                                               new SelectListItem {Text="Winter" ,Value="Winter" },
+                                               new SelectListItem {Text="Spring" ,Value="Spring" },
+
+                                                  }, " ", new { required = "required", @class = "form-control", id = "floatingSesone" })
+                                        @Html.ValidationMessageFor(m => m.Season, "", new { @class = "alaa" })
+                                        <label for="floatingSesone">Season Of Product :</label>
+                                    </div>
+                                    <div class="form-control">
+                                        <div class="multiselect">
+                                            <div class="selectBox" onclick="showCheckboxes()">
+                                                <select class="form-select">
+                                                    <option>Color : </option>
+                                                </select>
+                                                <div class="overSelect"></div>
+                                            </div>
+
+                                            <div id="checkboxes">
+
+                                                <label for="one">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[0].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[0].Value)
+
+                                                    @*<input type="checkbox" name="Color_Sizee" id="one" value="Red" />*@Red
+
+                                                </label>
+                                                <label for="two">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[1].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[1].Value)
+                                                    Green
+                                                </label>
+                                                <label for="three">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[2].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[2].Value)
+                                                    Yallow
+                                                </label>
+                                                <label for="four">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[3].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[3].Value)
+                                                    Silver
+                                                </label>
+                                                <label for="five">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[4].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[4].Value)
+                                                    Vinous
+                                                </label>
+                                                <label for="six">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[5].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[5].Value)
+                                                    Grey
+                                                </label>
+                                                <label for="seven">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[6].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[6].Value)
+                                                    White
+                                                </label>
+
+                                                <label for="nine">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[7].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[7].Value)
+                                                    Pink
+                                                </label>
+                                                <label for="ten">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[8].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[8].Value)
+                                                    Blue
+                                                </label>
+                                                <label for="eleven">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[9].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[9].Value)
+                                                    Black
+                                                </label>
+                                                <label for="towelve">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[10].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[10].Value)
+                                                    Iron
+                                                </label>
+                                                <label for="th">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[11].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[11].Value)
+                                                    Orange
+                                                </label>
+                                                <label for="forth">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[12].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[12].Value)
+                                                    Purple
+                                                </label>
+                                                <label for="fifth">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[13].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[13].Value)
+                                                    Magenta
+                                                </label>
+                                                @Html.ValidationMessageFor(m => m.Selectcolor, "", new { @class = "alaa" })
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        @Html.TextBoxFor(m => m.Company, new {@class= "form-control", id = "floatingCompany" })
+                                        <label for="floatingCompany">Company:</label>
+                                    </div>
+                                    <div class="form-floating">
+
+                                        @Html.DropDownListFor(m => m.Meadin, new List<SelectListItem>{
+                                              new SelectListItem {Text="SYRIA" ,Value="SYRIA" },
+                                               new SelectListItem {Text="CHINA" ,Value="CHINA" },
+                                               new SelectListItem {Text="EYGPT" ,Value="EYGPT" },
+                                                new SelectListItem {Text="TAILAND" ,Value="TAILAND" },
+                                               new SelectListItem {Text="KORIA" ,Value="KORIA" },
+                                               new SelectListItem {Text="ENGLAND" ,Value="ENGLAND" },
+                                                new SelectListItem {Text="TAYWAN" ,Value="TAYWAN" },
+                                               new SelectListItem {Text="ITALY" ,Value="ITALY" },
+                                               new SelectListItem {Text="GERMANY" ,Value="GERMANY" },
+
+                                                  }, "", new { required = "required", @class = "form-control", id = "floatingMade" })
+                                        @Html.ValidationMessageFor(m => m.Meadin, "", new { @class = "alaa" })
+
+                                        <label for="floatingMade">Made In :</label>
+                                    </div>
+                                    @*@Html.ListBoxFor(y=>y.Selectcolor,Model.color,new{ id = "one" })*@
+                                    <div class="form-control">
+                                        <div class="multiselect">
+                                            <div class="selectBox" onclick="showCheckboxes1()">
+                                                <select class="form-select">
+                                                    <option>Size : </option>
+                                                </select>
+                                                <div class="overSelect"></div>
+                                            </div>
+
+                                            <div id="checkboxes1">        
+                                               
+                                                <label for="one">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[0].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[0].Value)
+
+                                                    @*<input type="checkbox" name="Color_Sizee" id="one" value="Red" />*@35
+                                                   
+                                                </label>
+                                                <label for="two">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[1].Selected)     
+                                                    @Html.HiddenFor(m => m.Selectsize[1].Value)                                              
+                                                    36
+                                                </label>
+                                                <label for="three">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[2].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[2].Value)
+                                                    37
+                                                </label>
+                                                <label for="four">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[3].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[3].Value)
+                                                    38
+                                                </label>
+                                                <label for="five">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[4].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[4].Value)
+                                                    39
+                                                </label>
+                                                <label for="six">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[5].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[5].Value)
+                                                    40
+                                                </label>
+                                                <label for="seven">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[6].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[6].Value)
+                                                    41
+                                                </label>
+                                         
+                                                <label for="nine">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[7].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[7].Value)
+                                                    42
+                                                </label>
+                                                <label for="ten">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[8].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[8].Value)
+                                                    43
+                                                </label>
+                                                <label for="eleven">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[9].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[9].Value)
+                                                    44
+                                                </label>
+                                                <label for="towelve">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[10].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[10].Value)
+                                                    45
+                                                </label>
+                                                <label for="th">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[11].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[11].Value)
+                                                    46
+                                                </label>
+                                                <label for="forth">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[12].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[12].Value)
+                                                    small
+                                                </label>
+                                                <label for="fifthc">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[13].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[13].Value)
+                                                    medium
+                                                </label>
+                                                <label for="fifthf">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[14].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[14].Value)
+                                                    large
+                                                </label>
+                                                <label for="fiftha">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[15].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[15].Value)
+                                                    X large
+                                                </label>
+                                                <label for="fifthe">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[16].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[16].Value)
+                                                    XX large
+                                                </label>
+                             
+                                                @Html.ValidationMessageFor(m => m.Selectcolor, "", new { @class = "alaa" })
+
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="form-floating">
+                                        @Html.TextBoxFor(x=>x.Price, new { @class = "form-control",type="number" ,  id = "floatingPrice" , required = "required" })
+                                        @Html.ValidationMessageFor(m => m.Price, "", new { @class = "alaa" })
+                                        <label for="floatingPrice">Price:</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        @Html.TextBoxFor(x => x.count, new { @class = "form-control", type = "number", id = "floatingCount", required = "required" })
+                                        @Html.ValidationMessageFor(m => m.count, "", new { @class = "alaa" })
+                                        <label for="floatingCount">Count Of Product :</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="area cap">
+                        Description
+                    </div>
+                    <div class="area tear">
+                        @Html.TextAreaFor(m=>m.Description,new { @class = "wi", required = "required" })
+                    </div>
+                    <input type="submit" class="btnRegister button" value="Add Product" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+      
+           }
+   
+    <script src="~/Scripts/Add_Product/js.addprodact.js"></script>
+</body>
+
+</html>

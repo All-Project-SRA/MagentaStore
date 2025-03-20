@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\..Shaker\Desktop\publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/29/2021 19:05:14</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>05/29/2021 19:05:14</publishTime>
+    </File>
+    <File Include="bin/Magenta_S.dll">
+      <publishTime>01/28/2022 14:07:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/29/2021 19:03:09</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/29/2021 19:03:09</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>05/29/2021 19:03:10</publishTime>
+    </File>
+    <File Include="Content/Add_Admin/style.انشاء ادمن.css">
+      <publishTime>06/06/2021 14:04:51</publishTime>
+    </File>
+    <File Include="Content/Add_Product/bootstrap.min.css">
+      <publishTime>06/06/2021 12:57:52</publishTime>
+    </File>
+    <File Include="Content/Add_Product/style.css">
+      <publishTime>06/06/2021 12:57:59</publishTime>
+    </File>
+    <File Include="Content/AllCustomer/style.لائحة الزبائن.css">
+      <publishTime>06/13/2021 16:12:39</publishTime>
+    </File>
+    <File Include="Content/AllCustomer/theme.لائحة الزبائن.css">
+      <publishTime>06/06/2021 10:49:05</publishTime>
+    </File>
+    <File Include="Content/All_product/style.css">
+      <publishTime>06/05/2021 17:16:46</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/brands.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/brands.min.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/Cart/mdi-font/css/material-design-iconic-font.min.css">
+      <publishTime>06/05/2021 13:58:49</publishTime>
+    </File>
+    <File Include="Content/Cart/mdi-font/fonts/Material-Design-Iconic-Font.eot">
+      <publishTime>06/05/2021 13:58:49</publishTime>
+    </File>
+    <File Include="Content/Cart/mdi-font/fonts/Material-Design-Iconic-Font.svg">
+      <publishTime>06/05/2021 13:58:49</publishTime>
+    </File>
+    <File Include="Content/Cart/mdi-font/fonts/Material-Design-Iconic-Font.ttf">
+      <publishTime>06/05/2021 13:58:49</publishTime>
+    </File>
+    <File Include="Content/Cart/mdi-font/fonts/Material-Design-Iconic-Font.woff">
+      <publishTime>06/05/2021 13:58:49</publishTime>
+    </File>
+    <File Include="Content/Cart/mdi-font/fonts/Material-Design-Iconic-Font.woff2">
+      <publishTime>06/05/2021 13:58:49</publishTime>
+    </File>
+    <File Include="Content/Cart/style2.css">
+      <publishTime>06/05/2021 13:52:34</publishTime>
+    </File>
+    <File Include="Content/Cart/theme.css">
+      <publishTime>06/05/2021 13:52:34</publishTime>
+    </File>
+    <File Include="Content/controlpanel/bootstrap.min.css">
+      <publishTime>06/03/2021 21:32:31</publishTime>
+    </File>
+    <File Include="Content/controlpanel/style2.css">
+      <publishTime>06/03/2021 21:32:06</publishTime>
+    </File>
+    <File Include="Content/controlpanel/theme.css">
+      <publishTime>06/03/2021 21:31:51</publishTime>
+    </File>
+    <File Include="Content/Create_Dealer/style.أنشاء حساب.css">
+      <publishTime>06/06/2021 11:16:58</publishTime>
+    </File>
+    <File Include="Content/Dealers_Reviews/bootstrap.min.css">
+      <publishTime>06/03/2021 21:48:22</publishTime>
+    </File>
+    <File Include="Content/Dealers_Reviews/style.لائحة عرض التجار.css">
+      <publishTime>06/06/2021 12:17:46</publishTime>
+    </File>
+    <File Include="Content/Dealers_Reviews/theme.لائحة عرض التجار.css">
+      <publishTime>06/03/2021 21:48:22</publishTime>
+    </File>
+    <File Include="Content/fontawesome.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/fontawesome.min.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/Home/css/bootstrap-theme.css">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/bootstrap-theme.css.map">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/bootstrap-theme.min.css">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/bootstrap-theme.min.css.map">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/bootstrap.css">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/bootstrap.css.map">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/bootstrap.min.css">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/bootstrap.min.css.map">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/dosis.css">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/font-awesome.min.css">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/font.css">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/roboto.css">
+      <publishTime>06/05/2021 12:36:11</publishTime>
+    </File>
+    <File Include="Content/Home/css/style.css">
+      <publishTime>06/05/2021 13:09:06</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/attribution.js">
+      <publishTime>06/05/2021 12:36:54</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/all.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/all.min.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/brands.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/brands.min.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/fontawesome.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/fontawesome.min.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/regular.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/regular.min.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/solid.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/solid.min.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/svg-with-js.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/svg-with-js.min.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/v4-shims.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/js/v4-shims.min.css">
+      <publishTime>06/05/2021 12:37:26</publishTime>
+    </File>
+    <File Include="Content/Home/fontawesome/LICENSE.txt">
+      <publishTime>06/05/2021 12:36:54</publishTime>
+    </File>
+    <File Include="Content/HomeAdmin/all.min.css">
+      <publishTime>06/13/2021 13:04:08</publishTime>
+    </File>
+    <File Include="Content/HomeAdmin/bootstrap.min.css">
+      <publishTime>06/13/2021 13:04:08</publishTime>
+    </File>
+    <File Include="Content/HomeAdmin/style.home.admin.css">
+      <publishTime>06/13/2021 13:04:08</publishTime>
+    </File>
+    <File Include="Content/HomeCustomer/style.home.زبون.css">
+      <publishTime>06/05/2021 17:30:57</publishTime>
+    </File>
+    <File Include="Content/HomeDealer/all.min.css">
+      <publishTime>06/05/2021 13:32:21</publishTime>
+    </File>
+    <File Include="Content/HomeDealer/bootstrap.min.css">
+      <publishTime>06/05/2021 13:32:21</publishTime>
+    </File>
+    <File Include="Content/HomeDealer/style.home.تاجر.css">
+      <publishTime>06/11/2021 15:17:43</publishTime>
+    </File>
+    <File Include="Content/Modification/bootstrap.min.css">
+      <publishTime>06/06/2021 13:28:46</publishTime>
+    </File>
+    <File Include="Content/Modification/style.css">
+      <publishTime>06/06/2021 13:29:02</publishTime>
+    </File>
+    <File Include="Content/My_Buy/style.مشترياتي.css">
+      <publishTime>06/06/2021 11:51:29</publishTime>
+    </File>
+    <File Include="Content/My_Buy/theme.مشترياتي.css">
+      <publishTime>06/06/2021 11:51:36</publishTime>
+    </File>
+    <File Include="Content/My_Product/style.css">
+      <publishTime>06/10/2021 02:37:16</publishTime>
+    </File>
+    <File Include="Content/My_Sales/style.مبيعاتي.css">
+      <publishTime>06/06/2021 11:55:37</publishTime>
+    </File>
+    <File Include="Content/My_Sales/theme.مبيعاتي.css">
+      <publishTime>06/06/2021 11:55:43</publishTime>
+    </File>
+    <File Include="Content/Offer/style.css">
+      <publishTime>06/06/2021 13:38:16</publishTime>
+    </File>
+    <File Include="Content/ProductsForAdmin/style.css">
+      <publishTime>06/05/2021 18:35:54</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/bootstrap-theme.css">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/bootstrap-theme.css.map">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/bootstrap-theme.min.css">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/bootstrap-theme.min.css.map">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/bootstrap.css">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/bootstrap.css.map">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/bootstrap.min.css">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/bootstrap.min.css.map">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/font-awesome.min.css">
+      <publishTime>05/29/2021 19:31:28</publishTime>
+    </File>
+    <File Include="Content/RegisterUser/style.أنشاء حساب.css">
+      <publishTime>06/06/2021 14:32:12</publishTime>
+    </File>
+    <File Include="Content/regular.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/regular.min.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/Requist/bootstrap.min.css">
+      <publishTime>06/06/2021 12:14:19</publishTime>
+    </File>
+    <File Include="Content/Requist/font-face.css">
+      <publishTime>06/06/2021 12:09:22</publishTime>
+    </File>
+    <File Include="Content/Requist/style.لائحة طلبات الأدمن المعلقة.css">
+      <publishTime>06/06/2021 12:08:40</publishTime>
+    </File>
+    <File Include="Content/Requist/theme.لائحة طلبات الادمن المعلقة.css">
+      <publishTime>06/06/2021 12:08:44</publishTime>
+    </File>
+    <File Include="Content/SettingAccount/all.css">
+      <publishTime>05/29/2021 23:19:15</publishTime>
+    </File>
+    <File Include="Content/SettingAccount/bootstrap.min.css">
+      <publishTime>05/29/2021 23:17:51</publishTime>
+    </File>
+    <File Include="Content/SettingAccount/style.css">
+      <publishTime>05/29/2021 23:17:51</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/solid.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/solid.min.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/svg-with-js.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/svg-with-js.min.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/theme.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/v4-shims.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Content/v4-shims.min.css">
+      <publishTime>05/29/2021 19:10:50</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/29/2021 19:03:09</publishTime>
+    </File>
+    <File Include="Image/Create_Admin/undraw_deliveries_131a.svg">
+      <publishTime>06/06/2021 11:04:34</publishTime>
+    </File>
+    <File Include="Image/Create_Admin/undraw_profile_pic_ic5t.svg">
+      <publishTime>06/06/2021 11:04:39</publishTime>
+    </File>
+    <File Include="Image/Create_Dealer/undraw_Mobile_apps_re_3wjf.svg">
+      <publishTime>06/06/2021 11:18:20</publishTime>
+    </File>
+    <File Include="Image/Home/homeimg.jpg">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/Home/i1.jpg">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/Home/i2.jpg">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/Home/i3.jpg">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/Home/i4.jpg">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/Home/i5.jpg">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/Home/i6.jpg">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/Home/menu.png">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/Home/scorilo2-70x70.jpg">
+      <publishTime>06/04/2021 21:44:12</publishTime>
+    </File>
+    <File Include="Image/logo.png">
+      <publishTime>06/13/2021 12:43:24</publishTime>
+    </File>
+    <File Include="Image/undraw_Filing_system_re_56h6.svg">
+      <publishTime>05/29/2021 19:35:22</publishTime>
+    </File>
+    <File Include="Image/undraw_Mobile_apps_re_3wjf.svg">
+      <publishTime>05/29/2021 19:35:22</publishTime>
+    </File>
+    <File Include="Image/undraw_Resume_folder_re_e0bi.svg">
+      <publishTime>05/29/2021 19:35:22</publishTime>
+    </File>
+    <File Include="Models/magenta.edmx.diagram">
+      <publishTime>06/30/2021 06:49:49</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/29/2021 19:30:22</publishTime>
+    </File>
+    <File Include="Scripts/Add_Admin/js.انشاء ادمن.js">
+      <publishTime>06/06/2021 13:53:27</publishTime>
+    </File>
+    <File Include="Scripts/Add_Product/js.addprodact.js">
+      <publishTime>06/06/2021 12:59:25</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/29/2021 19:10:14</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/29/2021 19:10:14</publishTime>
+    </File>
+    <File Include="Scripts/controlpanel/bootstrap.min.js">
+      <publishTime>06/03/2021 21:33:17</publishTime>
+    </File>
+    <File Include="Scripts/controlpanel/jquery-3.6.0.min.js">
+      <publishTime>06/03/2021 21:33:09</publishTime>
+    </File>
+    <File Include="Scripts/Create_Dealer/app.أنشاء حساب.js">
+      <publishTime>06/06/2021 11:17:26</publishTime>
+    </File>
+    <File Include="Scripts/Home/anim.js">
+      <publishTime>06/05/2021 12:40:10</publishTime>
+    </File>
+    <File Include="Scripts/Home/bootstrap.js">
+      <publishTime>06/05/2021 12:40:10</publishTime>
+    </File>
+    <File Include="Scripts/Home/bootstrap.min.js">
+      <publishTime>06/05/2021 12:40:10</publishTime>
+    </File>
+    <File Include="Scripts/Home/jquery-.js">
+      <publishTime>06/05/2021 12:40:10</publishTime>
+    </File>
+    <File Include="Scripts/Home/npm.js">
+      <publishTime>06/05/2021 12:40:10</publishTime>
+    </File>
+    <File Include="Scripts/Home/validate.js">
+      <publishTime>06/05/2021 12:40:10</publishTime>
+    </File>
+    <File Include="Scripts/HomeAdmin/anim.home.admin.js">
+      <publishTime>06/13/2021 13:04:32</publishTime>
+    </File>
+    <File Include="Scripts/HomeAdmin/bootstrap.min.js">
+      <publishTime>06/13/2021 13:04:32</publishTime>
+    </File>
+    <File Include="Scripts/HomeAdmin/jquery-.js">
+      <publishTime>06/13/2021 13:04:32</publishTime>
+    </File>
+    <File Include="Scripts/HomeCustomer/anim.home.زبون.js">
+      <publishTime>06/05/2021 17:33:31</publishTime>
+    </File>
+    <File Include="Scripts/HomeDealer/anim.home.تاجر.js">
+      <publishTime>06/05/2021 13:32:46</publishTime>
+    </File>
+    <File Include="Scripts/HomeDealer/bootstrap.min.js">
+      <publishTime>06/05/2021 13:32:46</publishTime>
+    </File>
+    <File Include="Scripts/HomeDealer/jquery-.js">
+      <publishTime>06/05/2021 13:32:46</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>05/29/2021 19:10:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>05/29/2021 19:10:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>05/29/2021 19:10:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.6.0.min.js">
+      <publishTime>05/29/2021 19:10:17</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/29/2021 19:10:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/29/2021 19:10:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/29/2021 19:10:15</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/29/2021 19:10:15</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/29/2021 19:10:17</publishTime>
+    </File>
+    <File Include="Scripts/Modifacation/bootstrap.min.js">
+      <publishTime>06/06/2021 13:29:51</publishTime>
+    </File>
+    <File Include="Scripts/Modifacation/jquery-3.6.0.min.js">
+      <publishTime>06/06/2021 13:29:43</publishTime>
+    </File>
+    <File Include="Scripts/RegisterUser/anim.js">
+      <publishTime>05/29/2021 19:32:29</publishTime>
+    </File>
+    <File Include="Scripts/RegisterUser/app.أنشاء حساب.js">
+      <publishTime>05/31/2021 16:52:39</publishTime>
+    </File>
+    <File Include="Scripts/RegisterUser/bootstrap.js">
+      <publishTime>05/29/2021 19:32:29</publishTime>
+    </File>
+    <File Include="Scripts/RegisterUser/bootstrap.min.js">
+      <publishTime>05/29/2021 19:32:29</publishTime>
+    </File>
+    <File Include="Scripts/RegisterUser/jquery-.js">
+      <publishTime>05/29/2021 19:32:29</publishTime>
+    </File>
+    <File Include="Scripts/RegisterUser/npm.js">
+      <publishTime>05/29/2021 19:32:29</publishTime>
+    </File>
+    <File Include="Scripts/RegisterUser/validate.js">
+      <publishTime>05/29/2021 19:32:29</publishTime>
+    </File>
+    <File Include="Scripts/Requist/main.لائحة طلبات الادمن المعلقة.js">
+      <publishTime>06/14/2021 20:17:27</publishTime>
+    </File>
+    <File Include="Scripts/SettingAccount/bootstrap.min.js">
+      <publishTime>05/29/2021 23:18:13</publishTime>
+    </File>
+    <File Include="Scripts/SettingAccount/jquery-3.2.1.slim.min.js">
+      <publishTime>05/29/2021 23:18:13</publishTime>
+    </File>
+    <File Include="Scripts/SettingAccount/popper.min.js">
+      <publishTime>05/29/2021 23:18:13</publishTime>
+    </File>
+    <File Include="Views/Account/RegisterUser.cshtml">
+      <publishTime>06/29/2021 13:30:25</publishTime>
+    </File>
+    <File Include="Views/Account/UpdateAccount.cshtml">
+      <publishTime>06/30/2021 12:52:39</publishTime>
+    </File>
+    <File Include="Views/Bays/Carta.cshtml">
+      <publishTime>06/30/2021 07:22:24</publishTime>
+    </File>
+    <File Include="Views/Bays/My_Buy.cshtml">
+      <publishTime>06/28/2021 02:54:59</publishTime>
+    </File>
+    <File Include="Views/ConrolPanelD/All_Customer.cshtml">
+      <publishTime>06/15/2021 01:31:28</publishTime>
+    </File>
+    <File Include="Views/ConrolPanelD/ConrolPanelD.cshtml">
+      <publishTime>06/14/2021 13:03:51</publishTime>
+    </File>
+    <File Include="Views/ConrolPanelD/Dealers_Reviews.cshtml">
+      <publishTime>06/28/2021 01:46:36</publishTime>
+    </File>
+    <File Include="Views/Home/HomeAdmin.cshtml">
+      <publishTime>08/23/2021 20:44:09</publishTime>
+    </File>
+    <File Include="Views/Home/HomeCustomer.cshtml">
+      <publishTime>08/23/2021 22:15:23</publishTime>
+    </File>
+    <File Include="Views/Home/HomeDealer.cshtml">
+      <publishTime>06/30/2021 05:13:34</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>06/13/2021 19:40:34</publishTime>
+    </File>
+    <File Include="Views/Product/Add_Product.cshtml">
+      <publishTime>06/30/2021 12:48:01</publishTime>
+    </File>
+    <File Include="Views/Product/EditorTemplates/Color_Size.cshtml">
+      <publishTime>06/07/2021 00:45:51</publishTime>
+    </File>
+    <File Include="Views/Product/Modification.cshtml">
+      <publishTime>06/15/2021 20:24:10</publishTime>
+    </File>
+    <File Include="Views/Product/My_Product.cshtml">
+      <publishTime>06/28/2021 02:58:26</publishTime>
+    </File>
+    <File Include="Views/Requist/Requist.cshtml">
+      <publishTime>07/03/2021 20:26:34</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>06/28/2021 00:43:21</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/23/2021 20:27:32</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>05/29/2021 19:03:09</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/11/2021 15:48:31</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

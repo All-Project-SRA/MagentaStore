@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="98e689f976ff4330a66ca7be6113e33e" Name="Diagram1">
+        <EntityTypeShape EntityType="models.Bill" Width="1.5" PointX="8.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.Category" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.Post" Width="1.5" PointX="7.5" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.Product" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.User" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.Buy" Width="1.5" PointX="10.5" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.Color_Size" Width="1.5" PointX="7.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.Notice" Width="1.5" PointX="5.25" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="models.FK_Buy_Bills" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Users_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Posts_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Posts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Buy_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Color_Size_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Products_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Buy_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Notice_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

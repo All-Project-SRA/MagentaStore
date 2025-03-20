@@ -1,0 +1,141 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link href="~/Content/Add_product/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Add_product/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!------ Include the above in your HEAD tag ---------->
+    <form>
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-4 register-left">
+                    <img src="img/i1.jpg" id="img" alt="" width="241" height="450">
+                    <input type="file" class="form-control test2" accept="image/*" id="imag" onchange="getImage(event)" style="margin-left:55px;" />
+
+                </div>
+                <div class="col-md-8 register-right">
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Product Information</h3>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingType">
+
+                                            <option value="1">Tshirt</option>
+                                            <option value="2">Address</option>
+                                            <option value="3">Shoes</option>
+                                            <option value="3">Shirt</option>
+                                            <option value="3">Trousers</option>
+                                            <option value="3">Jeans</option>
+                                        </select>
+                                        <label for="floatingType">Type Of Product :</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingGender">
+
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                        </select>
+                                        <label for="floatingGender">Gender Of Type :</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingQuality">
+
+                                            <option value="1">Cotton</option>
+                                            <option value="2">Wool</option>
+                                            <option value="3">WaterProof</option>
+                                        </select>
+                                        <label for="floatingQuality">Quality Of Product :</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingSize">
+
+                                            <option value="1">36</option>
+                                            <option value="2">37</option>
+                                            <option value="3">36</option>
+                                            <option value="4">39</option>
+                                            <option value="5">40</option>
+                                            <option value="6">41</option>
+                                            <option value="7">42</option>
+                                            <option value="8">43</option>
+                                            <option value="9">44</option>
+                                            <option value="10">45</option>
+                                            <option value="11">46</option>
+                                            <option value="12">47</option>
+                                            <option value="13">small</option>
+                                            <option value="14">medium</option>
+                                            <option value="15">large</option>
+                                            <option value="16">X large</option>
+                                        </select>
+                                        <label for="floatingSize">Size Of Product :</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingMade">
+                                            <option value="1">SYRIA</option>
+                                            <option value="2">CHINA</option>
+                                            <option value="3">EYGPT</option>
+                                            <option value="4">TAILAND</option>
+                                            <option value="5">KORIA</option>
+                                            <option value="6">ENGLAND</option>
+                                            <option value="7">TAYWAN</option>
+                                            <option value="8">ITALY</option>
+                                            <option value="9">GERMANY</option>
+                                        </select>
+                                        <label for="floatingMade">Made In :</label>
+                                    </div>
+                                    <div class="form-group">
+                                        Choose the color of product :
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="color" class="form-control " required />
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" placeholder=" " id="floatingPrice" required="" />
+                                        <label for="floatingPrice">Price:</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" placeholder=" " id="floatingCount" required="" />
+                                        <label for="floatingCount">Count Of Product :</label>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="area cap" style="margin-left:390px;">
+                        Description
+                    </div>
+                    <div class="area tear" style="margin-left:280px;">
+                        <textarea class="wi" required=""></textarea>
+                    </div>
+                    <input type="submit" class="btnRegister button" value="Add Product" style="margin-right:350px;" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+    <script src="~/Scripts/Add_product/js.addprodact.js"></script>
+</body>
+
+</html>

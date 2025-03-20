@@ -1,0 +1,357 @@
+﻿@model Magenta_S.Models.ProductA
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="~/Content/Modification/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Modification/style.css" rel="stylesheet" />
+
+    <style>
+        .check {
+            text-align: center;
+            font-size: 90px;
+            color: red;
+        }
+
+        .vv {
+            color: red;
+            font-size: 30px;
+            font-weight: bolder;
+            Font-style: italic;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!------ Include the above in your HEAD tag ---------->
+    
+        @using (@Html.BeginForm("Modification", "Product", FormMethod.Post, new { @Idproduct=Model.Idproduct }))
+        {
+
+        <div class="container register">
+            <div class="row">
+                <div class="col-md-4 register-left">
+                    @Html.HiddenFor(x=>x.Idproduct)
+                    @Html.HiddenFor(x=>x.Idu)
+                    <img src="~/imageproduct/@Url.Content(Model.image)" /> 
+
+
+                </div>
+                <div class="col-md-8 register-right">
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Product Information</h3>
+                            <label> @Html.ValidationMessage("checks", new { @class = "register-heading vv" }) </label>
+                            <label>  @Html.ValidationMessage("checkc", new { @class = "register-heading vv" })</label>
+                            <label>  @Html.ValidationMessage("imageu", new { @class = "register-heading vv" })</label>
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingType" disabled="">
+                                            <option> @Html.DisplayFor(x=>x.Type)   </option>
+                                        </select>
+                                        <label for="floatingType">Type Of Product :</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingGender" disabled="">
+                                            <option> @Html.DisplayFor(x => x.Genderoftype)   </option>
+                                        </select>
+                                        <label for="floatingGender">Gender Of Type :</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingQuality" disabled="">
+                                            <option> @Html.DisplayFor(x => x.Quality)   </option>
+                                        </select>
+                                        <label for="floatingQuality">Quality Of Product :</label>
+                                    </div>
+                                    
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingSesone"disabled>
+                                            <option> @Html.DisplayFor(x => x.Season)   </option>
+                                        </select>
+                                        <label for="floatingSesone">Season Of Product :</label>
+                                    </div>                                 
+
+
+
+                                    <div class="form-control">
+                                        <div class="multiselect">
+                                            <div class="selectBox" onclick="showCheckboxes()">
+                                                <select class="form-select">
+                                                    <option>Size : </option>
+                                                </select>
+                                                <div class="overSelect"></div>
+                                            </div>
+
+                                            <div id="checkboxes">
+
+                                                <label for="one">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[0].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[0].Value)
+
+                                                    @*<input type="checkbox" name="Color_Sizee" id="one" value="Red" />*@35
+
+                                                </label>
+                                                <label for="two">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[1].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[1].Value)
+                                                    36
+                                                </label>
+                                                <label for="three">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[2].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[2].Value)
+                                                    37
+                                                </label>
+                                                <label for="four">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[3].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[3].Value)
+                                                    38
+                                                </label>
+                                                <label for="five">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[4].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[4].Value)
+                                                    39
+                                                </label>
+                                                <label for="six">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[5].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[5].Value)
+                                                    40
+                                                </label>
+                                                <label for="seven">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[6].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[6].Value)
+                                                    41
+                                                </label>
+
+                                                <label for="nine">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[7].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[7].Value)
+                                                    42
+                                                </label>
+                                                <label for="ten">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[8].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[8].Value)
+                                                    43
+                                                </label>
+                                                <label for="eleven">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[9].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[9].Value)
+                                                    44
+                                                </label>
+                                                <label for="towelve">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[10].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[10].Value)
+                                                    45
+                                                </label>
+                                                <label for="th">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[11].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[11].Value)
+                                                    46
+                                                </label>
+                                                <label for="forth">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[12].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[12].Value)
+                                                    small
+                                                </label>
+                                                <label for="fifthc">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[13].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[13].Value)
+                                                    medium
+                                                </label>
+                                                <label for="fifthf">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[14].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[14].Value)
+                                                    large
+                                                </label>
+                                                <label for="fiftha">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[15].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[15].Value)
+                                                    X large
+                                                </label>
+                                                <label for="fifthe">
+                                                    @Html.CheckBoxFor(m => m.Selectsize[16].Selected)
+                                                    @Html.HiddenFor(m => m.Selectsize[16].Value)
+                                                    XX large
+                                                </label>
+
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        @Html.TextBoxFor(x=>x.Company,new  {@class= "form-control", id = "floatingCompany", Readonly = "readonly" })
+                                        <label for="floatingCompany">Company:</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <select class="form-control" id="floatingMade" disabled="">
+                                            <option>  @Html.DisplayFor(x => x.Meadin) </option>
+                                        </select>
+                                        <label for="floatingMade">Made In :</label>
+                                    </div>
+                                    <div class="form-control">
+                                        <div class="multiselect">
+                                            <div class="selectBox" onclick="showCheckboxes1()">
+                                                <select class="form-select">
+                                                    <option>Color : </option>
+                                                </select>
+                                                <div class="overSelect"></div>
+                                            </div>
+
+                                            <div id="checkboxes1">
+
+                                                <label for="one">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[0].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[0].Value)
+
+                                                    @*<input type="checkbox" name="Color_Sizee" id="one" value="Red" />*@Red
+
+                                                </label>
+                                                <label for="two">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[1].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[1].Value)
+                                                    Green
+                                                </label>
+                                                <label for="three">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[2].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[2].Value)
+                                                    Yallow
+                                                </label>
+                                                <label for="four">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[3].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[3].Value)
+                                                    Silver
+                                                </label>
+                                                <label for="five">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[4].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[4].Value)
+                                                    Vinous
+                                                </label>
+                                                <label for="six">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[5].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[5].Value)
+                                                    Grey
+                                                </label>
+                                                <label for="seven">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[6].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[6].Value)
+                                                    White
+                                                </label>
+
+                                                <label for="nine">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[7].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[7].Value)
+                                                    Pink
+                                                </label>
+                                                <label for="ten">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[8].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[8].Value)
+                                                    Blue
+                                                </label>
+                                                <label for="eleven">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[9].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[9].Value)
+                                                    Black
+                                                </label>
+                                                <label for="towelaave">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[10].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[10].Value)
+                                                    Iron
+                                                </label>
+                                                <label for="taah">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[11].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[11].Value)
+                                                    Orange
+                                                </label>
+                                                <label for="foaarth">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[12].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[12].Value)
+                                                    Purple
+                                                </label>
+                                                <label for="fiftaah">
+                                                    @Html.CheckBoxFor(m => m.Selectcolor[13].Selected)
+                                                    @Html.HiddenFor(m => m.Selectcolor[13].Value)
+                                                    Magenta
+                                                </label>
+                                                @Html.ValidationMessageFor(m => m.Selectcolor, "", new { @class = "alaa" })
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-floating">
+                                        @Html.TextBoxFor(x => x.Price, new { @class = "form-control", id = "floatingPrice",name= "txtEmpPhone" })
+                                        <label for="floatingPrice">Price:</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        @Html.TextBoxFor(x => x.count, new { @class = "form-control", id = "floatingCount", name = "txtEmpPhone" })
+                                        <label for="floatingCount">Count Of Product :</label>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="area cap">
+                        Description
+                    </div>
+                    <div class="area tear">
+                        @Html.TextAreaFor(x=>x.Description, new {@class="wi" })
+                    </div>
+                    <input type="submit" class="btnRegister button" value="Modification" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+        }
+        <script src="~/Scripts/Modifacation/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/Modifacation/bootstrap.min.js"></script>
+    <script>
+            var expanded = false;
+
+  function showCheckboxes() {
+    var checkboxes = document.getElementById("checkboxes");
+    if (!expanded) {
+      checkboxes.style.display = "block";
+      expanded = true;
+    } else {
+      checkboxes.style.display = "none";
+      expanded = false;
+    }
+  }
+  function showCheckboxes1() {
+    var checkboxes = document.getElementById("checkboxes1");
+    if (!expanded) {
+      checkboxes.style.display = "block";
+      expanded = true;
+    } else {
+      checkboxes.style.display = "none";
+      expanded = false;
+    }
+  }
+    </script>
+</body>
+
+</html>

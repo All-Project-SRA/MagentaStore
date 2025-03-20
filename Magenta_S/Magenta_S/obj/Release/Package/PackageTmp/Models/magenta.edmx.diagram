@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="98e689f976ff4330a66ca7be6113e33e" Name="Diagram1" ZoomLevel="84">
+        <EntityTypeShape EntityType="models.Category" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.Post" Width="1.5" PointX="7.5" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.sysdiagram" Width="1.5" PointX="0.625" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.User" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="models.Notice" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="models.FK_Users_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Posts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="models.FK_Notice_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="models.Color" Width="1.5" PointX="10.25" PointY="7.375" />
+        <EntityTypeShape EntityType="models.Size" Width="1.5" PointX="7" PointY="9.875" />
+        <AssociationConnector Association="models.BillBuy" />
+        <EntityTypeShape EntityType="models.Product" Width="1.5" PointX="5.25" PointY="4.625" />
+        <AssociationConnector Association="models.FK_Color_Products" />
+        <AssociationConnector Association="models.FK_Posts_Products" />
+        <AssociationConnector Association="models.FK_Products_Users" />
+        <AssociationConnector Association="models.FK_Size_Products" />
+        <EntityTypeShape EntityType="models.Bill" Width="1.5" PointX="4.25" PointY="1.625" />
+        <EntityTypeShape EntityType="models.Buy" Width="1.5" PointX="7.5" PointY="1.875" />
+        <AssociationConnector Association="models.FK_Buy_Bills1" />
+        <AssociationConnector Association="models.FK_Buy_Products" />
+        <AssociationConnector Association="models.FK_Buy_Users" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

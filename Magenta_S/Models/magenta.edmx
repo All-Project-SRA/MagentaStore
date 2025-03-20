@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Bills">
+          <Key>
+            <PropertyRef Name="Idbill" />
+          </Key>
+          <Property Name="Idbill" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Idu" Type="int" Nullable="false" />
+          <Property Name="Newplace" Type="text" />
+          <Property Name="Newphone" Type="nchar" MaxLength="10" />
+          <Property Name="Totalprice" Type="money" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Magenta.dbo.Buy' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Buy">
+          <Key>
+            <PropertyRef Name="Idu" />
+            <PropertyRef Name="Idproduct" />
+            <PropertyRef Name="Idbill" />
+            <PropertyRef Name="Count" />
+            <PropertyRef Name="Ok" />
+          </Key>
+          <Property Name="Idu" Type="int" Nullable="false" />
+          <Property Name="Idproduct" Type="int" Nullable="false" />
+          <Property Name="Idbill" Type="int" Nullable="false" />
+          <Property Name="Count" Type="int" Nullable="false" />
+          <Property Name="Ok" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Idc" />
+          </Key>
+          <Property Name="Idc" Type="int" Nullable="false" />
+          <Property Name="Cname" Type="varchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Magenta.dbo.Color&Size' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Color&amp;Size">
+          <Key>
+            <PropertyRef Name="Idprodact" />
+            <PropertyRef Name="Color" />
+            <PropertyRef Name="Size" />
+          </Key>
+          <Property Name="Idprodact" Type="int" Nullable="false" />
+          <Property Name="Color" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Size" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Magenta.dbo.Notice' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Notice">
+          <Key>
+            <PropertyRef Name="Idu" />
+            <PropertyRef Name="Date" />
+          </Key>
+          <Property Name="Idu" Type="int" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Posts">
+          <Key>
+            <PropertyRef Name="Idpost" />
+          </Key>
+          <Property Name="Idpost" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" Nullable="false" />
+          <Property Name="Idu" Type="int" Nullable="false" />
+          <Property Name="Idproduct" Type="int" />
+          <Property Name="Posteddate" Type="datetime" Nullable="false" />
+          <Property Name="Photo" Type="image" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="Idproduct" />
+          </Key>
+          <Property Name="Idproduct" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Idu" Type="int" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Genderoftype" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Quality" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Season" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Company" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" Nullable="false" />
+          <Property Name="Photo" Type="image" Nullable="false" />
+          <Property Name="Meadin" Type="varchar" MaxLength="20" />
+          <Property Name="Price" Type="money" />
+          <Property Name="count" Type="int" Nullable="false" />
+          <Property Name="Ok" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="Idu" />
+          </Key>
+          <Property Name="Idu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Idc" Type="int" Nullable="false" />
+          <Property Name="Fname" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Lname" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Gender" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="address" Type="varchar(max)" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Hiredate" Type="date" Nullable="false" />
+          <Property Name="Point" Type="int" />
+          <Property Name="CommercialRecord" Type="varchar(max)" />
+          <Property Name="CountProduct" Type="int" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="birthday" Type="date" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Buy_Bills">
+          <End Role="Bills" Type="Self.Bills" Multiplicity="1" />
+          <End Role="Buy" Type="Self.Buy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Bills">
+              <PropertyRef Name="Idbill" />
+            </Principal>
+            <Dependent Role="Buy">
+              <PropertyRef Name="Idbill" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Buy_Products">
+          <End Role="Products" Type="Self.Products" Multiplicity="1" />
+          <End Role="Buy" Type="Self.Buy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Idproduct" />
+            </Principal>
+            <Dependent Role="Buy">
+              <PropertyRef Name="Idproduct" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Buy_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Buy" Type="Self.Buy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Idu" />
+            </Principal>
+            <Dependent Role="Buy">
+              <PropertyRef Name="Idu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Color&amp;Size_Products">
+          <End Role="Products" Type="Self.Products" Multiplicity="1" />
+          <End Role="Color&amp;Size" Type="Self.Color&amp;Size" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Idproduct" />
+            </Principal>
+            <Dependent Role="Color&amp;Size">
+              <PropertyRef Name="Idprodact" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notice_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Notice" Type="Self.Notice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Idu" />
+            </Principal>
+            <Dependent Role="Notice">
+              <PropertyRef Name="Idu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Posts_Products">
+          <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
+          <End Role="Posts" Type="Self.Posts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Idproduct" />
+            </Principal>
+            <Dependent Role="Posts">
+              <PropertyRef Name="Idproduct" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Posts_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Posts" Type="Self.Posts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Idu" />
+            </Principal>
+            <Dependent Role="Posts">
+              <PropertyRef Name="Idu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Products" Type="Self.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Idu" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Idu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Users_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Idc" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="Idc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="modelsStoreContainer">
+          <EntitySet Name="Bills" EntityType="Self.Bills" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Buy" EntityType="Self.Buy" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Buy].[Idu] AS [Idu], 
+    [Buy].[Idproduct] AS [Idproduct], 
+    [Buy].[Idbill] AS [Idbill], 
+    [Buy].[Count] AS [Count], 
+    [Buy].[Ok] AS [Ok]
+    FROM [dbo].[Buy] AS [Buy]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Color&amp;Size" EntityType="Self.Color&amp;Size" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Color&amp;Size].[Idprodact] AS [Idprodact], 
+    [Color&amp;Size].[Color] AS [Color], 
+    [Color&amp;Size].[Size] AS [Size]
+    FROM [dbo].[Color&amp;Size] AS [Color&amp;Size]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Notice" EntityType="Self.Notice" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Notice].[Idu] AS [Idu], 
+    [Notice].[Date] AS [Date], 
+    [Notice].[Description] AS [Description]
+    FROM [dbo].[Notice] AS [Notice]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Buy_Bills" Association="Self.FK_Buy_Bills">
+            <End Role="Bills" EntitySet="Bills" />
+            <End Role="Buy" EntitySet="Buy" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Buy_Products" Association="Self.FK_Buy_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Buy" EntitySet="Buy" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Buy_Users" Association="Self.FK_Buy_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Buy" EntitySet="Buy" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Color&amp;Size_Products" Association="Self.FK_Color&amp;Size_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Color&amp;Size" EntitySet="Color&amp;Size" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notice_Users" Association="Self.FK_Notice_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Notice" EntitySet="Notice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Posts_Products" Association="Self.FK_Posts_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Posts" EntitySet="Posts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Posts_Users" Association="Self.FK_Posts_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Posts" EntitySet="Posts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Users" Association="Self.FK_Products_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Users_Category" Association="Self.FK_Users_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="models" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Bill">
+          <Key>
+            <PropertyRef Name="Idbill" />
+          </Key>
+          <Property Name="Idbill" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Idu" Type="Int32" Nullable="false" />
+          <Property Name="Newplace" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Newphone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Totalprice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <NavigationProperty Name="Buys" Relationship="Self.FK_Buy_Bills" FromRole="Bills" ToRole="Buy" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Idc" />
+          </Key>
+          <Property Name="Idc" Type="Int32" Nullable="false" />
+          <Property Name="Cname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Users" Relationship="Self.FK_Users_Category" FromRole="Category" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Post">
+          <Key>
+            <PropertyRef Name="Idpost" />
+          </Key>
+          <Property Name="Idpost" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Idu" Type="Int32" Nullable="false" />
+          <Property Name="Idproduct" Type="Int32" />
+          <Property Name="Posteddate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Posts_Products" FromRole="Posts" ToRole="Products" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Posts_Users" FromRole="Posts" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Idproduct" />
+          </Key>
+          <Property Name="Idproduct" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Idu" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Genderoftype" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Quality" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Season" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Company" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="Meadin" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="count" Type="Int32" Nullable="false" />
+          <Property Name="Ok" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Posts" Relationship="Self.FK_Posts_Products" FromRole="Products" ToRole="Posts" />
+          <NavigationProperty Name="Buys" Relationship="Self.FK_Buy_Products" FromRole="Products" ToRole="Buy" />
+          <NavigationProperty Name="Color_Size" Relationship="Self.FK_Color_Size_Products" FromRole="Products" ToRole="Color_Size" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Products_Users" FromRole="Products" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Idu" />
+          </Key>
+          <Property Name="Idu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Idc" Type="Int32" Nullable="false" />
+          <Property Name="Fname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Lname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Hiredate" Type="DateTime" Precision="0" Nullable="false" />
+          <Property Name="Point" Type="Int32" />
+          <Property Name="CommercialRecord" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="CountProduct" Type="Int32" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Category" Relationship="Self.FK_Users_Category" FromRole="Users" ToRole="Category" />
+          <NavigationProperty Name="Posts" Relationship="Self.FK_Posts_Users" FromRole="Users" ToRole="Posts" />
+          <NavigationProperty Name="Products" Relationship="Self.FK_Products_Users" FromRole="Users" ToRole="Products" />
+          <NavigationProperty Name="Buys" Relationship="Self.FK_Buy_Users" FromRole="Users" ToRole="Buy" />
+          <NavigationProperty Name="Notices" Relationship="Self.FK_Notice_Users" FromRole="Users" ToRole="Notice" />
+          <Property Name="birthday" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="Buy">
+          <Key>
+            <PropertyRef Name="Idu" />
+            <PropertyRef Name="Idproduct" />
+            <PropertyRef Name="Idbill" />
+            <PropertyRef Name="Count" />
+            <PropertyRef Name="Ok" />
+          </Key>
+          <Property Name="Idu" Type="Int32" Nullable="false" />
+          <Property Name="Idproduct" Type="Int32" Nullable="false" />
+          <Property Name="Idbill" Type="Int32" Nullable="false" />
+          <Property Name="Count" Type="Int32" Nullable="false" />
+          <Property Name="Ok" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Bill" Relationship="Self.FK_Buy_Bills" FromRole="Buy" ToRole="Bills" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Buy_Products" FromRole="Buy" ToRole="Products" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Buy_Users" FromRole="Buy" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Color_Size">
+          <Key>
+            <PropertyRef Name="Idprodact" />
+            <PropertyRef Name="Color" />
+            <PropertyRef Name="Size" />
+          </Key>
+          <Property Name="Idprodact" Type="Int32" Nullable="false" />
+          <Property Name="Color" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Size" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Color_Size_Products" FromRole="Color_Size" ToRole="Products" />
+        </EntityType>
+        <EntityType Name="Notice">
+          <Key>
+            <PropertyRef Name="Idu" />
+            <PropertyRef Name="Date" />
+          </Key>
+          <Property Name="Idu" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="User" Relationship="Self.FK_Notice_Users" FromRole="Notice" ToRole="Users" />
+        </EntityType>
+        <Association Name="FK_Buy_Bills">
+          <End Role="Bills" Type="Self.Bill" Multiplicity="1" />
+          <End Role="Buy" Type="Self.Buy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Bills">
+              <PropertyRef Name="Idbill" />
+            </Principal>
+            <Dependent Role="Buy">
+              <PropertyRef Name="Idbill" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Users_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Users" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Idc" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="Idc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Posts_Products">
+          <End Role="Products" Type="Self.Product" Multiplicity="0..1" />
+          <End Role="Posts" Type="Self.Post" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Idproduct" />
+            </Principal>
+            <Dependent Role="Posts">
+              <PropertyRef Name="Idproduct" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Posts_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Posts" Type="Self.Post" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Idu" />
+            </Principal>
+            <Dependent Role="Posts">
+              <PropertyRef Name="Idu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Buy_Products">
+          <End Role="Products" Type="Self.Product" Multiplicity="1" />
+          <End Role="Buy" Type="Self.Buy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Idproduct" />
+            </Principal>
+            <Dependent Role="Buy">
+              <PropertyRef Name="Idproduct" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Color_Size_Products">
+          <End Role="Products" Type="Self.Product" Multiplicity="1" />
+          <End Role="Color_Size" Type="Self.Color_Size" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Idproduct" />
+            </Principal>
+            <Dependent Role="Color_Size">
+              <PropertyRef Name="Idprodact" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Products" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Idu" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="Idu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Buy_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Buy" Type="Self.Buy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Idu" />
+            </Principal>
+            <Dependent Role="Buy">
+              <PropertyRef Name="Idu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Notice_Users">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Notice" Type="Self.Notice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Idu" />
+            </Principal>
+            <Dependent Role="Notice">
+              <PropertyRef Name="Idu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="magentadb" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bills" EntityType="Self.Bill" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Posts" EntityType="Self.Post" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <EntitySet Name="Buys" EntityType="Self.Buy" />
+          <EntitySet Name="Color_Size" EntityType="Self.Color_Size" />
+          <EntitySet Name="Notices" EntityType="Self.Notice" />
+          <AssociationSet Name="FK_Buy_Bills" Association="Self.FK_Buy_Bills">
+            <End Role="Bills" EntitySet="Bills" />
+            <End Role="Buy" EntitySet="Buys" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Users_Category" Association="Self.FK_Users_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Posts_Products" Association="Self.FK_Posts_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Posts" EntitySet="Posts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Posts_Users" Association="Self.FK_Posts_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Posts" EntitySet="Posts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Buy_Products" Association="Self.FK_Buy_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Buy" EntitySet="Buys" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Color_Size_Products" Association="Self.FK_Color_Size_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Color_Size" EntitySet="Color_Size" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Users" Association="Self.FK_Products_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Buy_Users" Association="Self.FK_Buy_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Buy" EntitySet="Buys" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Notice_Users" Association="Self.FK_Notice_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Notice" EntitySet="Notices" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="modelsStoreContainer" CdmEntityContainer="magentadb">
+          <EntitySetMapping Name="Bills">
+            <EntityTypeMapping TypeName="models.Bill">
+              <MappingFragment StoreEntitySet="Bills">
+                <ScalarProperty Name="Idbill" ColumnName="Idbill" />
+                <ScalarProperty Name="Idu" ColumnName="Idu" />
+                <ScalarProperty Name="Newplace" ColumnName="Newplace" />
+                <ScalarProperty Name="Newphone" ColumnName="Newphone" />
+                <ScalarProperty Name="Totalprice" ColumnName="Totalprice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="models.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="Idc" ColumnName="Idc" />
+                <ScalarProperty Name="Cname" ColumnName="Cname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Posts">
+            <EntityTypeMapping TypeName="models.Post">
+              <MappingFragment StoreEntitySet="Posts">
+                <ScalarProperty Name="Idpost" ColumnName="Idpost" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Idu" ColumnName="Idu" />
+                <ScalarProperty Name="Idproduct" ColumnName="Idproduct" />
+                <ScalarProperty Name="Posteddate" ColumnName="Posteddate" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="models.Product">
+              <MappingFragment StoreEntitySet="Products">
+                <ScalarProperty Name="Idproduct" ColumnName="Idproduct" />
+                <ScalarProperty Name="Idu" ColumnName="Idu" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Genderoftype" ColumnName="Genderoftype" />
+                <ScalarProperty Name="Quality" ColumnName="Quality" />
+                <ScalarProperty Name="Season" ColumnName="Season" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="Meadin" ColumnName="Meadin" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="count" ColumnName="count" />
+                <ScalarProperty Name="Ok" ColumnName="Ok" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="models.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="models.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="birthday" ColumnName="birthday" />
+                <ScalarProperty Name="Idu" ColumnName="Idu" />
+                <ScalarProperty Name="Idc" ColumnName="Idc" />
+                <ScalarProperty Name="Fname" ColumnName="Fname" />
+                <ScalarProperty Name="Lname" ColumnName="Lname" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Hiredate" ColumnName="Hiredate" />
+                <ScalarProperty Name="Point" ColumnName="Point" />
+                <ScalarProperty Name="CommercialRecord" ColumnName="CommercialRecord" />
+                <ScalarProperty Name="CountProduct" ColumnName="CountProduct" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Buys">
+            <EntityTypeMapping TypeName="models.Buy">
+              <MappingFragment StoreEntitySet="Buy">
+                <ScalarProperty Name="Idu" ColumnName="Idu" />
+                <ScalarProperty Name="Idproduct" ColumnName="Idproduct" />
+                <ScalarProperty Name="Idbill" ColumnName="Idbill" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="Ok" ColumnName="Ok" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Color_Size">
+            <EntityTypeMapping TypeName="models.Color_Size">
+              <MappingFragment StoreEntitySet="Color&amp;Size">
+                <ScalarProperty Name="Idprodact" ColumnName="Idprodact" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notices">
+            <EntityTypeMapping TypeName="models.Notice">
+              <MappingFragment StoreEntitySet="Notice">
+                <ScalarProperty Name="Idu" ColumnName="Idu" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

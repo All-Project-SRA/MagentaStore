@@ -1,0 +1,541 @@
+﻿@model Magenta_S.Models.ProductA
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="">
+
+    <link href="~/Content/HomeDealer/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/HomeDealer/all.min.css" rel="stylesheet" />
+    <link href="~/Content/HomeDealer/style.home.تاجر.css" rel="stylesheet" />
+    <link href="~/Content/Home/fontawesome/js/all.css" rel="stylesheet" />
+    <style>
+        .item.header {
+            background-image: url('../../../Image/Home/homeimg.jpg');
+        }
+
+        .bu {
+            height: 50px;
+            margin-left: 50px;
+        }
+
+        .navbar-header .in {
+            margin-left: -5px;
+            height: 50px;
+            width: 300px;
+        }
+
+        * {
+            font-family: Calibri;
+        }
+
+        .ddd {
+            font-size: 20px;
+            color: red;
+            text-align: center;
+            margin-left: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER =============================-->
+    <header class="item header margin-top-0">
+        <div class="wrapper">
+            <nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header" style="height: 100px;">
+                        <button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <i class="fa fa-bars"></i>
+                            <span class="sr-only">Toggle navigation</span>
+
+                        </button>
+                        <a href="#" class="navbar-brand brand">  <img src="~/Image/logo.png" width="110" height="110" style="margin-top: -23px;" /> </a>
+
+
+
+                        <button class="bu"> SERACH </button>
+                        <input type="search" class="in">
+                    </div>
+                    <div id="navbar-collapse-02" class="collapse navbar-collapse">
+                        <ul class="nav-list-2">
+
+                            <li>
+                                <a href='@Url.Action("Carta", "Bays",new  {idu=Model.Idu })'>
+                                    <svg class="bi" fill="currentColor" viewBox="0 0 576 512" style="height:60px;width:60px;">
+                                        <path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='@Url.Action("RegisterUser", "Account",new  {idu=Model.Idu })'>
+                                    <svg class="bi" fill="currentColor" viewBox="0 0 512 512" style="height:60px;width:60px;">
+                                        <path d="M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" id="product-toggle">
+                    <label class="product-wrapper-1" for="product-toggle">
+                        <span class="product-1"></span>
+                    </label>
+                    <nav class="navbar-1">
+                        <ul class="nav-list-1">
+                            <li>
+                                <a href='@Url.Action("UpdateAccount", "Account",new {@id=Model.Idu })'>
+                                    <svg class="bi" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+                                        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+                                    </svg>Account Sittings
+                                </a>
+                            </li>
+                            <li>
+                                <a href='@Url.Action("My_Buy", "Bays",new {@id=Model.Idu })'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layers-fill" viewBox="0 0 16 16">
+                                        <path d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4z" />
+                                        <path d="m2.125 8.567-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0l-5.17-2.756z" />
+                                    </svg> Sales
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="text-pageheader">
+                            <div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.1s">
+                                Magenta Store
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT =============================-->
+    <!--navbar-->
+    <!--navbar-->
+    <section class="item content">
+        <div class="container toparea">
+            <div class="underlined-title">
+                <div class="editContent">
+                    <h1 class="text-center latestitems">SUGGESTED PRODUCTS MAGENTA STORE</h1>
+
+                </div>
+                <div class="wow-hr type_short">
+                    <span class="wow-hr-h">
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    @Html.ValidationMessage("lll", new { @class = "ddd" })
+    @Html.ValidationMessage("kk", new { @class = "ddd" })
+
+
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.getallforuserAPI())
+            {
+                using (@Html.BeginForm(new { @idproduct = item.Idproduct }))
+                {
+
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        @{ int mm = item.Idproduct + 99; }
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#@mm"><i class="fa fa-shopping-cart"></i> Purchase</a>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#@item.Idproduct"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct"> <img src="~/imageproduct/@Url.Content(item.image)" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>@item.Type</h1>
+                                <span class="price">
+                                    @{double total = item.Price * 1.05;
+                                        int tatol = (int)total;
+                                    }
+                                    <span class="edd_price" style="font-size:20px;font-weight:bold;color:#00802b">@tatol <text> S.P </text> </span>
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- CALL TO ACTION =============================-->
+
+
+                    <!-- FOOTER =============================-->
+
+                    <!-- Modals -->
+                    <div class="modal fade" tabindex="-1" role="dialog" id="@mm">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title text-center">PURCHASE</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to add the product to the cart?</p>
+                                    <div class="form-group">
+                                        <label>Enter the count you need :</label>
+                                        <input type="number" name="countp" class="form-control modal-count" required="" style="margin-left: 6px;"> <span class="modal-span"> / @item.count </span><br>
+                                        <label>Choose the Size you need :</label>
+                                        <div class="form-floating modal-count">
+                                            @Html.Hidden("counttheproduct", item.count)
+                                            <select class="form-control modal-count" name="selects">
+                                                @{
+                                                    foreach (var s in item.Sizes)
+                                                    {
+
+                                                        <option value="@s.size1" customAttribute="item.SomethingSpecial">
+                                                            @s.size1
+                                                        </option>
+                                                    }
+                                                }
+                                            </select>
+
+
+                                        </div>
+                                        <br>
+                                        <label>Choose the color you need :</label>
+                                        <div class="form-floating modal-count">
+
+                                            <select class="form-control modal-count" name="selectc">
+                                                @{
+                                                    foreach (var s in item.Colors)
+                                                    {
+
+                                                        <option value="@s.ColorP" customAttribute="item.SomethingSpecial">
+                                                            @s.ColorP
+                                                        </option>
+                                                    }
+                                                }
+                                            </select>
+
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button type="submit" class="btn btn-success" value="@item.Idproduct">Purchase Product</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+
+
+                    <div class="modal fade" tabindex="-1" role="dialog" id="@item.Idproduct">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title text-center">Details Of Product</h4>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <label>Type Of Product : </label> <span>@item.Type</span><br>
+                                    <label>Gender Of Type : </label> <span>@item.Genderoftype</span><br>
+                                    <label>Quality Of Product : </label> <span>@item.Quality</span><br>
+                                    <label>Size Of Product : </label> <span>
+                                        @foreach (var s in item.Sizes)
+                                        {
+
+                                            @s.size1
+
+                                        }
+                                    </span><br>
+                                    <label>Made in : </label> <span>@item.Meadin</span><br>
+                                    <label>Color Of Product : </label> <span>
+                                        @foreach (var i in item.Colors)
+                                        {
+                                            <text>   </text>
+                                            @i.ColorP
+                                        }
+                                    </span><br>
+                                    <label>Description : </label> <span>@item.Description</span><br>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                }
+            }
+        </div>
+    </div>
+
+    <div class="container"><hr style="border-top: 1px solid #333;" /></div>
+    
+    <br />
+    <br />
+
+
+    <section class="item content">
+        <div class="container toparea">
+            <div class="underlined-title">
+                <div class="editContent">
+                    <h1 class="text-center latestitems">PRODUCTS MAGENTA STORE</h1>
+
+                </div>
+                <div class="wow-hr type_short">
+                    <span class="wow-hr-h">
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                        <i class="fa fa-star fa-spin"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model.productallshow)
+            {
+                using (@Html.BeginForm(new { @idproduct = item.Idproduct }))
+                {
+
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        @{ int mm = item.Idproduct + 99; }
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#@mm"><i class="fa fa-shopping-cart"></i> Purchase</a>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#@item.Idproduct"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct"> <img src="~/imageproduct/@Url.Content(item.image)" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>@item.Type</h1>
+                                <span class="price">
+                                    @{double total = item.Price * 1.05;
+                                        int tatol = (int)total;
+                                    }
+                                    <span class="edd_price" style="font-size:20px;font-weight:bold;color:#00802b">@tatol <text> S.P </text> </span>
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- CALL TO ACTION =============================-->
+
+
+                    <!-- FOOTER =============================-->
+
+                    <!-- Modals -->
+                    <div class="modal fade" tabindex="-1" role="dialog" id="@mm">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title text-center">PURCHASE</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to add the product to the cart?</p>
+                                    <div class="form-group">
+                                        <label>Enter the count you need :</label>
+                                        <input type="number" name="countp" class="form-control modal-count" required="" style="margin-left: 6px;"> <span class="modal-span"> / @item.count </span><br>
+                                        <label>Choose the Size you need :</label>
+                                        <div class="form-floating modal-count">
+                                            @Html.Hidden("counttheproduct", item.count)
+                                            <select class="form-control modal-count" name="selects">
+                                                @{
+                                                    foreach (var s in item.Sizes)
+                                                    {
+
+                                                        <option value="@s.size1" customAttribute="item.SomethingSpecial">
+                                                            @s.size1
+                                                        </option>
+                                                    }
+                                                }
+                                            </select>
+
+
+                                        </div>
+                                        <br>
+                                        <label>Choose the color you need :</label>
+                                        <div class="form-floating modal-count">
+
+                                            <select class="form-control modal-count" name="selectc">
+                                                @{
+                                                    foreach (var s in item.Colors)
+                                                    {
+
+                                                        <option value="@s.ColorP" customAttribute="item.SomethingSpecial">
+                                                            @s.ColorP
+                                                        </option>
+                                                    }
+                                                }
+                                            </select>
+
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button type="submit" class="btn btn-success" value="@item.Idproduct">Purchase Product</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+
+
+                    <div class="modal fade" tabindex="-1" role="dialog" id="@item.Idproduct">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title text-center">Details Of Product</h4>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <label>Type Of Product : </label> <span>@item.Type</span><br>
+                                    <label>Gender Of Type : </label> <span>@item.Genderoftype</span><br>
+                                    <label>Quality Of Product : </label> <span>@item.Quality</span><br>
+                                    <label>Size Of Product : </label> <span>
+                                        @foreach (var s in item.Sizes)
+                                        {
+
+                                            @s.size1
+
+                                        }
+                                    </span><br>
+                                    <label>Made in : </label> <span>@item.Meadin</span><br>
+                                    <label>Color Of Product : </label> <span>
+                                        @foreach (var i in item.Colors)
+                                        {
+                                            <text>   </text>
+                                            @i.ColorP
+                                        }
+                                    </span><br>
+                                    <label>Description : </label> <span>@item.Description</span><br>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                }
+            }
+        </div>
+    </div>
+
+
+    <section class="content-block" style="background-color:#00bba7;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.1s">
+                        <h1 class="callactiontitle">
+                            Stay tuned for more products from Magenta Store
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <p class="footernote">
+                    Connect with Magenta
+                </p>
+                <ul class="social-iconsfooter">
+                    <li><a href="#"><i class="fa fa-phone" style="margin-top:25px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f" style="margin-top:25px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" style="margin-top:25px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g" style="margin-top:25px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p" style="margin-top:25px;"></i></a></li>
+                </ul>
+                <p>
+                    &copy; 2021 Magenta<br />
+                    <!-- Button trigger modal -->
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load JS here for greater good =============================-->
+
+    <script src="~/Scripts/HomeDealer/jquery-.js"></script>
+    <script src="~/Scripts/HomeDealer/bootstrap.min.js"></script>
+    <script src="~/Scripts/HomeDealer/anim.home.تاجر.js"></script>
+
+
+
+
+
+    <script>
+        //----HOVER CAPTION---//
+        jQuery(document).ready(function ($) {
+            $('.fadeshop').hover(
+                function () {
+                    $(this).find('.captionshop').fadeIn(150);
+                },
+                function () {
+                    $(this).find('.captionshop').fadeOut(150);
+                }
+            );
+        });
+    </script>
+</body>
+
+
+
+</html>

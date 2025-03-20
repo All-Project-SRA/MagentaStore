@@ -1,0 +1,230 @@
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\csc.exe
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\System.Collections.Immutable.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\vbc.exe
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe.config
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\Magenta_S.dll.config
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\Magenta_S.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\Magenta_S.pdb
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\EntityFramework.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\Microsoft.Web.Infrastructure.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Helpers.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Mvc.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Razor.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Webpages.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\EntityFramework.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Razor.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Webpages.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Helpers.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\bin\System.Web.Mvc.xml
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\obj\Debug\Magenta_S.dll
+c:\users\..shaker\documents\visual studio 2015\Projects\Magenta_S\Magenta_S\obj\Debug\Magenta_S.pdb
+C:\Users\..Shaker\Documents\Visual Studio 2015\Projects\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csprojResolveAssemblyReference.cache
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\csc.exe
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Collections.Immutable.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Reflection.Metadata.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\vbc.exe
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe
+E:\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe.config
+E:\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll.config
+E:\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.pdb
+E:\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.Web.Infrastructure.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.dll
+E:\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.xml
+E:\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.xml
+E:\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.xml
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.xml
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.xml
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.xml
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.xml
+E:\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.xml
+E:\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csprojResolveAssemblyReference.cache
+E:\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.dll
+E:\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.pdb
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\csc.exe
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\vbc.exe
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll.config
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.pdb
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.xml
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.dll
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.pdb
+C:\Users\..Shaker\Desktop\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csprojResolveAssemblyReference.cache
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\csc.exe
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Collections.Immutable.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Reflection.Metadata.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\vbc.exe
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe.config
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll.config
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.pdb
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.Web.Infrastructure.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.xml
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csprojResolveAssemblyReference.cache
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.dll
+D:\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.pdb
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\csc.exe
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Collections.Immutable.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Reflection.Metadata.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\vbc.exe
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe.config
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll.config
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.pdb
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.Web.Infrastructure.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.xml
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csproj.AssemblyReference.cache
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csproj.CoreCompileInputs.cache
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csproj.Up2Date
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.pdb
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Newtonsoft.Json.dll
+D:\MyProjects\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Newtonsoft.Json.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\csc.exe
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\vbc.exe
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll.config
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Magenta_S.pdb
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Newtonsoft.Json.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\EntityFramework.SqlServer.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\Newtonsoft.Json.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Razor.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Deployment.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Webpages.Razor.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Helpers.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\bin\System.Web.Mvc.xml
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csproj.AssemblyReference.cache
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csproj.CoreCompileInputs.cache
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.csproj.Up2Date
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.dll
+C:\Users\AnAs\Desktop\Magenta_S_2022\Magenta_S_2022\Magenta_S_2022\Magenta_S\Magenta_S\Magenta_S\obj\Debug\Magenta_S.pdb

@@ -1,0 +1,283 @@
+﻿@model Magenta_S.Models.RequistAdmin
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link href="~/Content/Requist/font-face.css" rel="stylesheet" />
+    <link href="~/Content/Cart/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" />
+
+
+    <link href="~/Content/Requist/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Requist/theme.لائحة طلبات الادمن المعلقة.css" rel="stylesheet" />
+    <link href="~/Content/Requist/style.لائحة طلبات الأدمن المعلقة.css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar ma" href='@Url.Action("HomeAdmin", "Home")'>MAGENTA</a>
+            <a href='@Url.Action("Requist", "Requist")' title="Requists" class="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                </svg>
+            </a>
+            <div class="collapse navbar-collapse">
+
+             
+                <form class="d-flex ">
+                    <button class="btn btn-outline-success bu" type="submit">SEARCH</button>
+                    <input class="form-control me-2 in" type="search" placeholder="" aria-label="Search">
+
+                </form>
+             
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <!-- DATA TABLE -->
+        <div class="row">
+            <div class="col-md-12">
+
+                @*<div class="table-data__tool">
+                <div class="table-data__tool-left mar">
+                    <div class="rs-select2--light rs-select2--md">
+                        <select class="js-select2" name="property">
+                            <option selected="selected">All Status</option>
+                            <option value="">Buy</option>
+                            <option value="">Upload</option>
+                            <option value="">Post</option>
+                            <option value="">Create Account</option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                    <div class="rs-select2--light rs-select2--sm">
+                        <select class="js-select2" name="time">
+                            <option selected="selected">Today</option>
+                            <option value="">3 Days</option>
+                            <option value="">1 Week</option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+
+                </div>
+            </div>*@
+                <div class="table-responsive table-responsive-data2">
+                    <table class="table table-data2">
+                        <thead>
+                            <tr>
+                                <th>Number if bill</th>
+                                <th>date</th>
+                                <th>status</th>
+                                <th>Phone</th>               
+                                <th>new place</th>
+                                <th> Totalprice</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.getbill)
+                            {
+                                using (@Html.BeginForm("bay", "Requist", new { @idbill = item.Idbill }, FormMethod.Post))
+                                {
+
+
+                                    <tr class="tr-shadow">
+
+                                        <td>@item.Idbill</td>
+                                        <td>
+
+                                            <span class="block-email">@item.date.ToShortDateString() </span>
+                                        </td>
+                                        <td><span class="status--sale">Basket</span></td>
+                                        <td>
+                                           @item.Newphone
+                                        </td>
+                                       
+                                        <td>  @item.Newplace </td>
+
+                                        <td><span class="status--sale">@item.Totalprice</span> </td>
+                                      
+               
+                                        <td>
+                                            <div class="table-data-feature">
+                                                <button type="button" class="item n" data-toggle="tooltip" data-placement="top" title="More">
+                                                    <i class="zmdi zmdi-more"></i>
+                                                </button>
+                                                <button class="item" name="submit" value="donep" data-toggle="tooltip" data-placement="top" title="Done" style="color:green">
+                                                    <i class="zmdi zmdi-mail-send"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                            <!--المزيد-->
+                                    foreach (var i in item.Buys)
+                                    {
+
+
+                                        <tr class="tr-shadow1 n">
+
+                                            <td>@i.Product.Type</td>
+                                            <td>
+                                                <span class="block-email">@i.Product.Company</span>
+                                            </td>
+
+                                            <td> <text> the Size is  </text> @i.Sizee</td>
+                                            <td>
+                                                <span class="status--sale">Buy</span>
+                                            </td>
+                                            
+                                            <td>@i.Product.Price</td>
+                                            <td> <text> the count is  </text> @i.Count </td>
+
+                                            <td>  <text> Color is </text> @i.ColorP</td>
+                        
+                                            <td> <img src="~/imageproduct/@Url.Content(@i.Product.image)" height="100" width="100" /> </td>
+                                        </tr>
+                                    }
+                                }
+                            }
+
+
+                            <!--End-->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive table-responsive-data2">
+                    <table class="table table-data2">
+                        <thead>
+                            <tr>
+                                <th>Name of Dealer</th>
+                                <th>date</th>
+                                <th>status</th>
+                                <th>Count</th>
+                                <th>price</th>
+                                <th>Type</th>
+                                <th> Description </th>
+                                <th> image</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.getproduct)
+                            {
+                                using (@Html.BeginForm("accept_product", "Requist", new { @Idproduct = item.Idproduct }, FormMethod.Post))
+                                {
+
+
+                                    <tr class="spacer"></tr>
+                                    <tr class="tr-shadow">
+
+                                        <td> @item.User.Fname <text>  </text> @item.User.Lname </td>
+                                        <td>
+                                            <span class="block-email"> @item.date.ToShortDateString()</span>
+                                        </td>
+                                        <td> <span class="status--upload">Add prodact</span> </td>
+                                        <td>
+                                            @item.count
+                                        </td>
+                                        <td><span class="status--sale">@item.Price<text>$</text></span></td>
+                                        <td>   @item.Type  </td>
+
+                                        <td>  @item.Description </td>
+                                        <td>
+                                            <img src="~/imageproduct/@Url.Content(item.image)" height="100" width="100" />
+                                        </td>
+                                        <td>
+                                            <div class="table-data-feature">
+                                                <button class="item" data-toggle="tooltip" value="send" name="submit" data-placement="top" title="Done">
+                                                    <i class="zmdi zmdi-mail-send"></i>
+                                                </button>
+
+                                                <button class="item" data-toggle="tooltip" name="submit" value="delete" data-placement="top" title="Delete">
+                                                    <i class="zmdi zmdi-delete"></i>
+                                                </button>
+                                            </div>
+
+                                        </td>
+
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+                <div class="table-responsive table-responsive-data2">
+                    <table class="table table-data2">
+                        <thead>
+                            <tr>
+                                <th>Name of Dealer</th>
+                                <th>birthday</th>
+                                <th>status</th>
+                                <th>CommercialRecord</th>
+                                <th>Username</th>
+                                <th>address</th>
+                                <th> Phone </th>
+                               
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.getaccount)
+                            {
+                                using (@Html.BeginForm("accept_account", "Requist", new { @idu = item.Idu }, FormMethod.Post))
+                                {
+                                    <tr class="tr-shadow">
+
+                                        <td>@item.Fname @item.Lname</td>
+                                        <td>
+
+                                            <span class="block-email"> @item.birthday.ToShortDateString()</span>
+                                        </td>
+                                        <td> <span class="status--Create">Create Account</span></td>
+                                        <td>
+                                            @item.CommercialRecord
+                                            
+                                        </td>
+
+                                        <td>@item.Username</td>
+                                        <td> @item.address</td>
+
+                                        <td>
+                                            @item.Phone
+                                        </td>
+
+
+                                        <td>
+                                            <div class="table-data-feature">
+                                                <button class="item" data-toggle="tooltip" name="submit" value="Done" data-placement="top" title="Done">
+                                                    <i class="zmdi zmdi-mail-send"></i>
+                                                </button>
+                                                <button class="item" data-toggle="tooltip" name="submit" value="delete" data-placement="top" title="Delete">
+                                                    <i class="zmdi zmdi-delete"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/Home/jquery-.js"></script>
+    <script src="~/Scripts/Requist/main.لائحة طلبات الادمن المعلقة.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+}
+
+.maf
+{
+	margin-top: 120px;
+}
+.addproduct
+{
+	transition: all 0.3s ease;
+	margin-left: 500px;
+	margin-bottom: 10px;
+	margin-top: -10px;
+	padding: 10px;
+}
+.buy
+{
+	float: right;
+	margin-right: 40px;
+	padding: 15px;
+	transition: all 0.2s ease;
+	border: none;
+	margin-bottom: 50px;
+}
+.total
+{
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 25px;
+	color: #555
+}
+.totalprice
+{
+	color: orange;
+}
+.table-data2.table thead th
+{
+	font-size: 15px;
+	text-align: center;
+	padding: 15px 20px
+}
+.table-data2.table tbody td
+{
+	text-align: center;
+	padding: 15px 20px
+}

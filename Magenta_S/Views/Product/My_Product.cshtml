@@ -1,0 +1,623 @@
+﻿
+@{
+    Layout = null;
+}
+
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="">
+
+    <link href="~/Content/Home/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Home/fontawesome/js/all.css" rel="stylesheet" />
+    <link href="~/Content/My_Product/style.css" rel="stylesheet" />
+    <link href="~/Content/Home/css/dosis.css" rel="stylesheet" />
+    <link href="~/Content/Home/css/roboto.css" rel="stylesheet" />
+    <style>
+        .item.header {
+            background-image: url('../../../Image/Home/homeimg.jpg');
+        }
+        .update{margin-top:-91px}
+    </style>
+
+</head>
+<body>
+
+    <!-- HEADER =============================-->
+    <header class="item header margin-top-0">
+        <div class="wrapper">
+            <nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <i class="fa fa-bars"></i>
+                            <span class="sr-only">Toggle navigation</span>
+
+                        </button>
+                        <a href="Home.html" class="navbar-brand brand"> Magenta </a>
+
+
+
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="propClone ic"><a href="../requist/requist.html"><i class="fa fa-envelope fa-2x"></i></a></li>
+
+                        </ul>
+                        <button class="bu"> SERACH </button>
+                        <input type="search" class="in">
+                    </div>
+                    <div id="navbar-collapse-02" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="propClone mb"><a href="../LogIn/LogIn.html"><i class="fa fa-user fa-2x"></i></a></li>
+                            <li class="propClone mb"><a href="cart/cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a></li>
+                            <li class="propClone mb"><a href=""><i class="fas fa-sign-out-alt fa-2x" title="Log Out"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="text-pageheader">
+                            <div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.1s">
+                                Magenta Store
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENT =============================-->
+    <!--navbar-->
+    <div class="container update">
+        <select class="form-select s1">
+            <optgroup label="TYPE OF PRODUCT"></optgroup>
+            <option selected class="bo">ِAll</option>
+            <option value="1">Tshirt</option>
+            <option value="2">Address</option>
+            <option value="3">Shoes</option>
+            <option value="3">Shirt</option>
+            <option value="3">Trousers</option>
+            <option value="3">Jeans</option>
+        </select>
+        <select class="form-select">
+            <optgroup label="GENDER OF PRODUCT"></optgroup>
+            <option selected>All</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+        </select>
+        <select class="form-select">
+            <optgroup label="Quality"></optgroup>
+            <option selected>All</option>
+            <option value="1">Cotton</option>
+            <option value="2">Wool</option>
+            <option value="3">WaterProof</option>
+        </select>
+        <section class="item content">
+            <div class="container martop">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                    <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                    <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                    <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu " onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $459.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $49.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $47.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $49.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $359.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                    <div class="col-md-4">
+                        <div class="productbox">
+                            <div class="fadeshop">
+                                <div class="captionshop text-center" style="display: none;">
+                                    <h3>SHOES</h3>
+                                    <p>
+                                        This is a short excerpt to generally describe what the item is about.
+                                    </p>
+                                    <p>
+                                        <a href="#" class="learn-more detailslearn" data-toggle="modal" data-target="#Details"><i class="fa fa-link"></i> Details</a>
+                                    </p>
+                                </div>
+                                <span class="maxproduct">  <img src="~/Image/Home/i1.jpg" height="312" width="500" />  </span>
+                            </div>
+                            <div class="product-details">
+
+                                <h1>shoes</h1>
+
+                                <span class="price">
+                                    <span class="edd_price newprice"> $23.00 </span>
+                                </span>
+                                <button class="btn btn-danger btnd" data-toggle="modal" data-target="#delete">Delete This Product</button><br>
+                                <button class="btn btn-primary btnu" onclick="window.location.href='Modification/Modification.html'">Product Modification</button><br>
+                                <button class="btn btn-success btnu" onclick="window.location.href='Offer/Offer.html'">Add Offer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.productbox -->
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+
+    <!-- Modals =============================-->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="Details">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">Details Of Product</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <label>Type Of Product : </label> <span>Tshirt</span><br>
+                    <label>Gender Of Type : </label> <span>Male</span><br>
+                    <label>Quality Of Product : </label> <span>cotton</span><br>
+                    <label>Size Of Product : </label> <span>42</span><br>
+                    <label>Made in : </label> <span>Syria</span><br>
+                    <label>Color Of Product : </label> <span>Green</span><br>
+                    <label>Description : </label> <span>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</span><br>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="delete">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">Are you sure to delete this product ?</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <button type="button" class="btn btn-danger">DELETE</button>
+
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- FOOTER =============================-->
+    <div class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <p class="footernote">
+                    Connect with Magenta
+                </p>
+                <ul class="social-iconsfooter">
+                    <li><a href="#"><i class="fa fa-phone" style="margin-top:25px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f" style="margin-top:25px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" style="margin-top:25px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g" style="margin-top:25px;"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p" style="margin-top:25px;"></i></a></li>
+                </ul>
+                <p>
+                    &copy; 2021 Magenta<br />
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="~/Scripts/Home/jquery-.js"></script>
+    <script src="~/Scripts/Home/bootstrap.min.js"></script>
+    <script src="~/Scripts/Home/anim.js"></script>
+
+    <script>
+//----HOVER CAPTION---//
+jQuery(document).ready(function ($) {
+	$('.fadeshop').hover(
+		function(){
+			$(this).find('.captionshop').fadeIn(150);
+		},
+		function(){
+			$(this).find('.captionshop').fadeOut(150);
+		}
+	);
+});
+    </script>
+</body>
+</html>

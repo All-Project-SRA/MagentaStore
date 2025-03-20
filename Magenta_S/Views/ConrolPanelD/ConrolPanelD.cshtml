@@ -1,0 +1,95 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="~/Content/controlpanel/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/controlpanel/theme.css" rel="stylesheet" />
+    <link href="~/Content/controlpanel/style2.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar ma" href="../Home/Home.html">MAGENTA</a>
+            <a href="../requist/requist.html" title="Requists" class="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                </svg>
+            </a>
+            <div class="collapse navbar-collapse">
+
+                <button class="btn op" onclick="window.location.href='../settings/settings.html'">
+                    options my acoount <svg xmlns="icon/gear" width="25" height="25" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                    </svg>
+                </button>
+                <form class="d-flex ">
+                    <button class="btn btn-outline-success bu" type="submit">SEARCH</button>
+                    <input class="form-control me-2 in" type="search" placeholder="" aria-label="Search">
+
+                </form>
+                <a href="" title="Log Out" class="icon2">
+                    <svg xmlns="icon/box-arrow-left" width="50" height="50" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+                        <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--end nav-->
+    <!--
+
+    background-color: #e60023
+    background-color: #0072b1
+     -->
+    <div class="aaa">
+        <div class="container">
+
+            <div class="row text-center">
+                <button onclick="location.href='@Url.Action("RegisterUser","Account")'" class="col-lg-4 btn " style="background-color: #3b5998">
+                        Add a Admin<br>
+                        <p>اضافة مسؤول</p>
+                    </button>
+                    <button class="col-lg-4 btn " style="background-color: #00acee" onclick="window.location.href='../CreateDealer/CreateDealer.html'">
+                        Add a dealer<br>
+                        <p> اضافة تاجر </p>
+                    </button>
+                <button onclick="location.href='@Url.Action("RegisterUser","ConrolPanelD")'" class="col-lg-4 btn  " style="background-color: #c4302b">
+                        dealers reviews<br>
+                        <p>عرض التجار وحذفها</p>
+                    </button>
+
+                    <button class="col-lg-4 btn " style="background-color: #14b255" onclick="window.location.href='../AbuYasen/Customer/AllCustomers/AllCustomers.html'">
+                        Customers reviews<br>
+                        <p>عرض الزبائن وحذفها</p>
+                    </button>
+
+                    <button class="col-lg-4 btn" style="background-color: #ff4301" onclick="window.location.href='../ProductsForAdmin/ProductsForAdmin.html'">
+                        Products reviews<br>
+                        <p>عرض المنتجات وتعديلها</p>
+
+                    </button>
+                    <button class="col-lg-4 btn" style="background-color: #555555">
+                        Delete a post<br>
+                        <p>عرض المنشورات وحذفها</p>
+                    </button>
+</div>
+        </div>
+        <i class="bi bi-archive-fill"></i>
+
+    </div>
+
+    <script src="~/Scripts/controlpanel/jquery-3.6.0.min.js"></script>
+    <script src="~/Scripts/controlpanel/bootstrap.min.js"></script>
+</body>
+</html>
